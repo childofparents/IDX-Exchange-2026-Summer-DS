@@ -1,0 +1,164 @@
+WEEK 1 DELIVERABLE: KEY COLUMN NOTES FOR CRMLS SOLD DATA
+
+OVERVIEW
+The dataset contains sold property records from CRMLS. Each row represents a listing/transaction record with sale outcome fields, property characteristics, geography, agent/office details, school/location context, taxes, association fees, and amenity flags.
+
+The machine learning target is ClosePrice, the final amount paid by the buyer to the seller. The project scope requires using only observations where PropertyType = Residential and PropertySubType = SingleFamilyResidence when constructing models.
+
+Important leakage warning: ListPrice and OriginalListPrice should not be used as model input features. They are seller/agent pricing fields that are highly related to the final sale price and can artificially inflate model performance. They may be explored descriptively, but they should be excluded from model feature sets.
+
+DATASET SNAPSHOT
+- Monthly files available: 8
+- Time window: 2025-10 through 2026-05
+- Columns in each monthly file: 78
+- Raw rows across the eight files: 166,725
+- Residential + SingleFamilyResidence rows: 83,495
+
+COLUMN CATEGORIES
+
+1. IDENTIFIERS AND RECORD KEYS
+These fields identify listings, records, or MLS-facing IDs. They are useful for joins, deduplication, and record audits, but generally should not be used as predictive model features.
+
+- ListingKey: Primary unique key for the Property resource. Use for deduplication and record-level tracking.
+- ListingKeyNumeric: Numeric version of the listing key. Use only as an identifier, not as a model feature.
+- ListingId: Human-facing listing identifier used to retrieve a specific listing. May match ListingKey in some systems, but should be treated as an ID.
+- BuyerAgentMlsId: MLS identifier for the buyer's agent. Useful for agent analysis, but high-cardinality and not a core price feature.
+
+2. TRANSACTION DATES AND STATUS
+These fields describe the listing lifecycle and transaction timing. They are important for filtering, temporal trend analysis, and train/test splitting.
+
+- ListingContractDate: Effective date of the agreement between seller and listing broker. Approximate start of the listing period.
+- PurchaseContractDate: Date an offer was accepted and the listing was no longer on market. Useful for understanding demand and time-to-contract.
+- CloseDate: Date the purchase agreement was fulfilled and the transaction closed. Use for sold-date trend analysis and time-based model splits.
+- ContractStatusChangeDate: Date of the listing's contractual status change, based on the contractual change rather than the MLS system timestamp.
+- MlsStatus: Local/regional listing status used by business users. Each MLS status maps to a standard status. In sold files this should generally indicate closed/sold statuses, but still worth checking.
+- DaysOnMarket: Number of days the property was on market according to MLS business rules. Useful demand signal; low values often indicate stronger demand.
+
+3. PRICE, VALUE, TAX, AND FEE FIELDS
+These fields describe money amounts. Some are target/leakage fields and need special handling.
+
+- ClosePrice: Final sale price paid by buyer to seller. This is the target variable for the prediction project.
+- ListPrice: Current asking/list price set by seller and broker. Do not use as a model feature because it leaks pricing strategy and is too close to ClosePrice.
+- OriginalListPrice: Original asking price in the initial listing agreement. Do not use as a model feature because it is a price anchor and can leak the target.
+- TaxAnnualAmount: Annual property tax amount from the latest assessment. May proxy property value and location, but can contain missing or jurisdiction-dependent values.
+- TaxYear: Tax year associated with tax fields. Useful for interpreting TaxAnnualAmount.
+- AssociationFee: Homeowners association fee used for common area/neighborhood benefits. Potentially useful, especially for properties in HOA communities.
+- AssociationFeeFrequency: Frequency of the association fee, such as monthly or annually. Needed before comparing AssociationFee across rows.
+
+4. PROPERTY TYPE AND MODELING SCOPE FIELDS
+These fields define which records belong in the modeling population.
+
+- PropertyType: Broad property category, such as Residential, Lease, Income, Land, or Commercial. For this project, filter to Residential.
+- PropertySubType: More specific property category, such as SingleFamilyResidence, Condominium, Townhouse, or MultiFamily. For this project, filter to SingleFamilyResidence.
+- BusinessType: Business-oriented type/classification field. Usually not central for single-family residential modeling and may be sparse.
+
+5. PHYSICAL PROPERTY SIZE AND STRUCTURE
+These are core property characteristics and likely useful model features after cleaning.
+
+- LivingArea: Total livable area within the structure. One of the most important non-leaky predictors of ClosePrice.
+- BuildingAreaTotal: Total building area. May differ from LivingArea depending on MLS rules and included spaces.
+- AboveGradeFinishedArea: Finished area at or above ground level. Useful where populated, but likely sparse in this dataset.
+- BelowGradeFinishedArea: Finished area below ground level. Useful in markets where basements matter, but may be sparse in California.
+- BedroomsTotal: Total number of bedrooms in the dwelling. Core property feature.
+- BathroomsTotalInteger: Simple integer sum of bathrooms. Example: two full baths and one half bath are represented as 3.
+- MainLevelBedrooms: Number of bedrooms on the main/entry level. Useful for accessibility/layout analysis if populated.
+- Stories: Number of stories in the structure. May capture vertical layout and property style.
+- Levels: Description/list of property levels. Related to Stories but often categorical/textual.
+- YearBuilt: Year the structure was built or became initially habitable. Useful for age-of-home feature engineering.
+- NewConstructionYN: Flag indicating whether the property is newly constructed and not previously occupied.
+- BuilderName: Name of the builder. May be useful for new construction analysis, but likely sparse/high-cardinality.
+
+6. LOT AND LAND CHARACTERISTICS
+These fields describe parcel size and land dimensions. Lot size can be valuable but often requires outlier handling.
+
+- LotSizeSquareFeet: Total square footage of the lot. Preferred standardized lot-size field when populated.
+- LotSizeAcres: Total acres of the lot. Can be converted to square feet using 43,560 square feet per acre.
+- LotSizeArea: Total lot area, with interpretation depending on units. Check consistency with other lot-size fields.
+- LotSizeDimensions: Text description of lot dimensions or parcel boundary lengths. Useful for manual review but not directly numeric without parsing.
+
+7. GEOGRAPHIC AND ADDRESS FIELDS
+Location is central to real estate pricing. These fields support geographic filtering, mapping, aggregation, and feature engineering.
+
+- Latitude: Geographic latitude of a reference point on the property.
+- Longitude: Geographic longitude of a reference point on the property.
+- UnparsedAddress: Full civic address as one text field. Useful for geocoding/review, but should generally not be used raw in models.
+- StreetNumberNumeric: Numeric street number portion of the address. Mostly an address identifier; not a meaningful standalone price feature.
+- City: City where the property is located.
+- StateOrProvince: State or province. Expected to be California for the CRMLS project data.
+- PostalCode: Postal/ZIP code. Strong location feature, but should be handled as categorical rather than numeric.
+- CountyOrParish: County or equivalent regional authority. Useful geographic aggregation feature.
+- MLSAreaMajor: Major MLS-defined marketing area. Useful local-market geography feature where populated.
+- SubdivisionName: Subdivision/community name. Potentially useful but high-cardinality and messy.
+
+8. SCHOOL AND DISTRICT FIELDS
+School fields can proxy neighborhood characteristics and may influence price, but categorical cardinality and missingness should be checked.
+
+- ElementarySchool: Elementary school associated with the property.
+- MiddleOrJuniorSchool: Middle or junior high school associated with the property.
+- HighSchool: High school associated with the property.
+- ElementarySchoolDistrict: Elementary school district associated with the property.
+- MiddleOrJuniorSchoolDistrict: Middle/junior school district associated with the property.
+- HighSchoolDistrict: High school district associated with the property.
+
+9. PARKING, GARAGE, AND COVERED SPACE FIELDS
+Parking availability can affect value, especially in dense or coastal markets.
+
+- ParkingTotal: Total number of parking spaces included in the sale.
+- GarageSpaces: Number of spaces in garages.
+- CoveredSpaces: Total number of garage and carport spaces.
+- AttachedGarageYN: Flag indicating whether the garage is attached.
+
+10. AMENITIES, FEATURES, AND YES/NO FLAGS
+These fields capture specific property amenities. They are usually useful after converting booleans/categorical values consistently.
+
+- FireplaceYN: Flag indicating whether the property includes a fireplace.
+- FireplacesTotal: Total number of fireplaces included in the property.
+- PoolPrivateYN: Flag indicating whether the property has a privately owned pool included in the sale.
+- ViewYN: Flag indicating whether the property has a view.
+- WaterfrontYN: Flag indicating whether the property is on the waterfront.
+- BasementYN: Flag indicating whether the property has a basement.
+- Flooring: List/type of flooring found within the property. Potentially useful but may be multi-valued and messy.
+
+11. AGENT AND OFFICE FIELDS
+These fields describe listing-side and buyer-side participants. They are useful for brokerage/agent performance analysis. For price modeling, they can create leakage or overfitting risk because buyer-side fields are only known after a transaction occurs.
+
+- ListAgentAOR: Listing agent's association/board of REALTORS.
+- ListAgentEmail: Listing agent email address. Contact identifier; not a model feature.
+- ListAgentFirstName: Listing agent first name.
+- ListAgentLastName: Listing agent last name.
+- ListAgentFullName: Listing agent full name.
+- ListOfficeName: Listing brokerage/office name.
+- BuyerAgentAOR: Buyer's agent association/board of REALTORS.
+- BuyerAgentFirstName: Buyer's agent first name.
+- BuyerAgentLastName: Buyer's agent last name.
+- BuyerOfficeName: Buyer-side brokerage/office name.
+- BuyerOfficeAOR: Buyer office association/board of REALTORS.
+- CoListAgentFirstName: Co-listing agent first name.
+- CoListAgentLastName: Co-listing agent last name.
+- CoListOfficeName: Co-listing office name.
+- CoBuyerAgentFirstName: Co-buyer agent first name.
+
+12. MODELING RECOMMENDATIONS FROM WEEK 1 REVIEW
+Non-leaky candidate features after Week 3 preprocessing:
+- LivingArea
+- BedroomsTotal
+- BathroomsTotalInteger
+- LotSizeSquareFeet or a cleaned combined lot-size field
+- DaysOnMarket, with care because availability/timing should match the intended prediction scenario
+- YearBuilt or engineered property age
+- Latitude and Longitude or engineered geographic groups
+- PostalCode, CountyOrParish, City, MLSAreaMajor, and school districts as categorical/geographic features
+- GarageSpaces, ParkingTotal, CoveredSpaces
+- FireplaceYN, FireplacesTotal, PoolPrivateYN, ViewYN, WaterfrontYN, NewConstructionYN
+- AssociationFee after normalizing by AssociationFeeFrequency
+
+Exclude or treat with caution:
+- ClosePrice: target only, never a feature.
+- ListPrice and OriginalListPrice: exclude from model features due to target leakage.
+- Buyer-side agent/office fields: usually unavailable before sale closes and can leak transaction outcome context.
+- ListingKey, ListingId, ListingKeyNumeric, BuyerAgentMlsId, StreetNumberNumeric, and agent names/emails: identifiers, not generalizable property features.
+- UnparsedAddress: useful for review/geocoding but should not be used raw.
+- High-cardinality text fields such as SubdivisionName, BuilderName, Flooring, and Levels require cleaning/encoding before modeling.
+
+NOTES FOR NEXT STEPS
+Week 2 exploration should use the filtered Residential + SingleFamilyResidence subset. Week 3 preprocessing should standardize numeric fields, parse dates, normalize boolean fields, choose a single cleaned lot-size representation, encode categorical geography/school fields, and explicitly drop ListPrice and OriginalListPrice from model features.
