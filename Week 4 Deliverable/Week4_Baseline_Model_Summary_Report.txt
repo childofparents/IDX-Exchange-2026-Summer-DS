@@ -1,0 +1,50 @@
+Week 4 Baseline Model Summary Report
+====================================
+
+Model: Linear Regression (ordinary least squares)
+Training data: 129,972 rows from 202505-202604
+Test data: 12,024 rows from 202605
+Predictor count: 93
+
+Baseline performance
+--------------------
+Test R2: 0.3639
+Train R2: 0.0180
+Test MAE: $528,942
+Test RMSE: $1,338,397
+Test median absolute error: $349,108
+
+Interpretation
+--------------
+The first linear regression baseline explains 36.4% of ClosePrice variance on the holdout month 2026-05. This is a useful starting line, but the error levels are still large for property-level price prediction.
+The Week 3 preprocessing kept listing-price fields out of the modeling matrix. The next model should compare against this R2 while exploring stronger nonlinear models, target/outlier treatment, and richer neighborhood features.
+
+Notes on the small TRAIN R2
+----------------------------
+The train R2 is tiny mostly because the training target has extreme ClosePrice outliers that the linear model cannot explain.
+
+In the train split, ClosePrice ranges from $1.75 to $989.5M, with 20 rows above $100M. The test split is much cleaner by comparison: max is about $98M, with 0 rows above $100M. The top 10 training residuals alone account for roughly 74% of the total squared training error, so they crush the train R2.
+
+When I evaluated the same model only on rows <= $10M, train R2 jumps from 0.0180 to about 0.4943, and test R2 is about 0.5100. 
+
+So this indicates that it's a target quality/outlier problem plus ordinary linear regression being very sensitive to squared-error outliers. The next modeling step should add target sanity rules, for example filtering implausible close prices, capping, or modeling log(ClosePrice) before comparing stronger models.
+
+
+Largest absolute coefficients
+-----------------------------
+                        feature      coefficient
+     PostalCode_train_frequency -23,960,881.7014
+             LivingArea_missing   4,184,903.2401
+    CountyOrParish__other_state  -1,524,075.4322
+       CountyOrParish__imperial  -1,512,001.3297
+        CountyOrParish__ventura  -1,502,051.8399
+      CountyOrParish__riverside  -1,387,757.4493
+         CountyOrParish__plumas   1,263,325.4693
+         CountyOrParish__sierra   1,252,020.9803
+ CountyOrParish__san_bernardino  -1,173,354.0347
+        CountyOrParish__trinity   1,117,280.3269
+         CountyOrParish__shasta   1,095,630.5285
+         CountyOrParish__lassen   1,090,362.0816
+              WaterfrontYN_flag   1,065,625.3573
+CountyOrParish__foreign_country  -1,056,511.5211
+                   LivingArea_z   1,052,050.0420

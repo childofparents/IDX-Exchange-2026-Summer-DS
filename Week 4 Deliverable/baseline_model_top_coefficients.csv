@@ -1,0 +1,16 @@
+feature,coefficient
+PostalCode_train_frequency,-23960881.701353762
+LivingArea_missing,4184903.2400772274
+CountyOrParish__other_state,-1524075.432184386
+CountyOrParish__imperial,-1512001.3296822393
+CountyOrParish__ventura,-1502051.839934288
+CountyOrParish__riverside,-1387757.4492786226
+CountyOrParish__plumas,1263325.4692539172
+CountyOrParish__sierra,1252020.9802883915
+CountyOrParish__san_bernardino,-1173354.0346608884
+CountyOrParish__trinity,1117280.3268515775
+CountyOrParish__shasta,1095630.5284587452
+CountyOrParish__lassen,1090362.08160797
+WaterfrontYN_flag,1065625.357318555
+CountyOrParish__foreign_country,-1056511.5211267467
+LivingArea_z,1052050.0419994807
