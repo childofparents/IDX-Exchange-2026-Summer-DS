@@ -40,8 +40,6 @@ REQUIRED_COLUMNS = [
     "BedroomsTotal",
     "BathroomsTotalInteger",
     "LotSizeSquareFeet",
-    "LotSizeAcres",
-    "LotSizeArea",
     "DaysOnMarket",
     "City",
     "CountyOrParish",
@@ -63,7 +61,7 @@ NUMERIC_FEATURES = [
     "LivingArea",
     "BedroomsTotal",
     "BathroomsTotalInteger",
-    "LotSizeUsedSqFt",
+    "LotSizeSquareFeet",
     "DaysOnMarket",
     "YearBuilt",
     "Latitude",
@@ -73,7 +71,7 @@ NUMERIC_FEATURES = [
     "AssociationFee",
 ]
 
-SKEWED_NUMERIC_FEATURES = {"LotSizeUsedSqFt", "DaysOnMarket", "AssociationFee"}
+SKEWED_NUMERIC_FEATURES = {"LotSizeSquareFeet", "DaysOnMarket", "AssociationFee"}
 BOOLEAN_FEATURES = ["NewConstructionYN", "PoolPrivateYN", "ViewYN", "WaterfrontYN"]
 CATEGORICAL_FEATURES = ["CountyOrParish", "PostalCode"]
 LEAKAGE_COLUMNS = ["ListPrice", "OriginalListPrice"]
@@ -137,8 +135,6 @@ def load_filtered_data() -> pd.DataFrame:
         "BedroomsTotal",
         "BathroomsTotalInteger",
         "LotSizeSquareFeet",
-        "LotSizeAcres",
-        "LotSizeArea",
         "DaysOnMarket",
         "Latitude",
         "Longitude",
@@ -153,10 +149,6 @@ def load_filtered_data() -> pd.DataFrame:
 
     raw["CloseDate"] = pd.to_datetime(raw["CloseDate"], errors="coerce")
     raw["CloseMonth"] = raw["CloseDate"].dt.to_period("M").astype("string")
-    raw["LotSizeUsedSqFt"] = raw["LotSizeSquareFeet"].where(
-        raw["LotSizeSquareFeet"].gt(0),
-        raw["LotSizeAcres"] * 43_560,
-    )
     raw["PropertyFilterMatch"] = raw["PropertyType"].eq("Residential") & raw["PropertySubType"].eq(
         "SingleFamilyResidence"
     )
@@ -171,7 +163,7 @@ def sanitize_feature_values(frame: pd.DataFrame) -> pd.DataFrame:
     cleaned.loc[cleaned["LivingArea"].le(0), "LivingArea"] = np.nan
     cleaned.loc[cleaned["BedroomsTotal"].le(0), "BedroomsTotal"] = np.nan
     cleaned.loc[cleaned["BathroomsTotalInteger"].le(0), "BathroomsTotalInteger"] = np.nan
-    cleaned.loc[cleaned["LotSizeUsedSqFt"].le(0), "LotSizeUsedSqFt"] = np.nan
+    cleaned.loc[cleaned["LotSizeSquareFeet"].le(0), "LotSizeSquareFeet"] = np.nan
     cleaned.loc[cleaned["DaysOnMarket"].lt(0), "DaysOnMarket"] = np.nan
     cleaned.loc[~cleaned["Latitude"].between(32, 42.5), "Latitude"] = np.nan
     cleaned.loc[~cleaned["Longitude"].between(-125, -113), "Longitude"] = np.nan
