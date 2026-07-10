@@ -1,0 +1,76 @@
+model,rank,feature,importance_type,value
+Linear Regression (baseline),1,cat__PostalCode_93108,coefficient,5323334.5
+Linear Regression (baseline),2,cat__PostalCode_90210,coefficient,4587085.0
+Linear Regression (baseline),3,cat__PostalCode_92657,coefficient,3538845.75
+Linear Regression (baseline),4,cat__PostalCode_90265,coefficient,3522194.0
+Linear Regression (baseline),5,cat__PostalCode_90077,coefficient,3312316.25
+Linear Regression (baseline),6,cat__PostalCode_90402,coefficient,3205876.75
+Linear Regression (baseline),7,cat__PostalCode_90024,coefficient,3178755.0
+Linear Regression (baseline),8,cat__HighSchoolDistrict_Newport Mesa Unified,coefficient,3128514.25
+Linear Regression (baseline),9,cat__PostalCode_90272,coefficient,2998505.75
+Linear Regression (baseline),10,num__missingindicator_BathroomsTotalInteger,coefficient,2698046.0
+Linear Regression (baseline),11,cat__PostalCode_92014,coefficient,2635606.5
+Linear Regression (baseline),12,cat__PostalCode_94022,coefficient,2599937.75
+Linear Regression (baseline),13,cat__PostalCode_92626,coefficient,-2582138.0
+Linear Regression (baseline),14,cat__PostalCode_90049,coefficient,2576824.75
+Linear Regression (baseline),15,cat__PostalCode_90266,coefficient,2493499.5
+Linear Regression (baseline),16,cat__PostalCode_93924,coefficient,-2438733.25
+Linear Regression (baseline),17,cat__PostalCode_92627,coefficient,-2423965.25
+Linear Regression (baseline),18,cat__HighSchoolDistrict_Laguna Beach Unified,coefficient,2334735.75
+Linear Regression (baseline),19,cat__PostalCode_94024,coefficient,2290849.0
+Linear Regression (baseline),20,cat__PostalCode_92629,coefficient,2193093.75
+Linear Regression (baseline),21,cat__PostalCode_92118,coefficient,2177673.0
+Linear Regression (baseline),22,num__missingindicator_BedroomsTotal,coefficient,-2112695.75
+Linear Regression (baseline),23,num__missingindicator_LivingArea,coefficient,2072246.5
+Linear Regression (baseline),24,cat__PostalCode_92037,coefficient,2045230.125
+Linear Regression (baseline),25,cat__HighSchoolDistrict_Carmel Unified,coefficient,1803146.875
+"Decision Tree (depth 24, leaf 10)",1,num__LivingArea,feature_importance,0.4531037062686344
+"Decision Tree (depth 24, leaf 10)",2,num__BathroomsTotalInteger,feature_importance,0.13378963023044402
+"Decision Tree (depth 24, leaf 10)",3,num__Latitude,feature_importance,0.09939020951865124
+"Decision Tree (depth 24, leaf 10)",4,num__Longitude,feature_importance,0.08238376528999657
+"Decision Tree (depth 24, leaf 10)",5,cat__PoolPrivateYN_Unknown,feature_importance,0.05478199379893474
+"Decision Tree (depth 24, leaf 10)",6,cat__HighSchoolDistrict_Newport Mesa Unified,feature_importance,0.03548274101821213
+"Decision Tree (depth 24, leaf 10)",7,num__YearBuilt,feature_importance,0.0298261898225217
+"Decision Tree (depth 24, leaf 10)",8,num__LotSizeSquareFeet,feature_importance,0.020551890398682847
+"Decision Tree (depth 24, leaf 10)",9,num__AssociationFee,feature_importance,0.014891846657191964
+"Decision Tree (depth 24, leaf 10)",10,num__missingindicator_AssociationFee,feature_importance,0.013812610565794685
+"Decision Tree (depth 24, leaf 10)",11,cat__PostalCode_90210,feature_importance,0.006631590690637493
+"Decision Tree (depth 24, leaf 10)",12,num__has_wood,feature_importance,0.005045795214652835
+"Decision Tree (depth 24, leaf 10)",13,cat__PostalCode_92629,feature_importance,0.004121391743815988
+"Decision Tree (depth 24, leaf 10)",14,num__missingindicator_MainLevelBedrooms,feature_importance,0.003726301645786081
+"Decision Tree (depth 24, leaf 10)",15,cat__PostalCode_92651,feature_importance,0.003411234976175733
+"Decision Tree (depth 24, leaf 10)",16,cat__HighSchoolDistrict_Laguna Beach Unified,feature_importance,0.0032886721321603116
+"Decision Tree (depth 24, leaf 10)",17,cat__PostalCode_90266,feature_importance,0.003164908113202533
+"Decision Tree (depth 24, leaf 10)",18,cat__PostalCode_92037,feature_importance,0.0030220310395808977
+"Decision Tree (depth 24, leaf 10)",19,num__level_three_or_more,feature_importance,0.0024457816394004932
+"Decision Tree (depth 24, leaf 10)",20,num__GarageSpaces,feature_importance,0.002345582328849117
+"Decision Tree (depth 24, leaf 10)",21,num__Levels_missing,feature_importance,0.0023438285559509225
+"Decision Tree (depth 24, leaf 10)",22,num__MainLevelBedrooms,feature_importance,0.0017089278075255799
+"Decision Tree (depth 24, leaf 10)",23,num__ParkingTotal,feature_importance,0.0013622753037490927
+"Decision Tree (depth 24, leaf 10)",24,num__missingindicator_GarageSpaces,feature_importance,0.001349841879193296
+"Decision Tree (depth 24, leaf 10)",25,cat__HighSchoolDistrict_Manhattan Unified,feature_importance,0.0012945114691607338
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",1,num__LivingArea,feature_importance,0.41420478590611765
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",2,num__BathroomsTotalInteger,feature_importance,0.17366250520633153
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",3,num__Latitude,feature_importance,0.08895905164008774
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",4,num__Longitude,feature_importance,0.0763846001163392
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",5,cat__HighSchoolDistrict_Newport Mesa Unified,feature_importance,0.02933049618964338
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",6,cat__PoolPrivateYN_Unknown,feature_importance,0.0270443356676077
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",7,num__AssociationFee,feature_importance,0.023913772038749035
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",8,num__YearBuilt,feature_importance,0.023639384476426627
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",9,num__LotSizeSquareFeet,feature_importance,0.021826576757764726
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",10,num__has_wood,feature_importance,0.01965559518581865
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",11,num__missingindicator_AssociationFee,feature_importance,0.018957583700926168
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",12,cat__PostalCode_90210,feature_importance,0.007289955284466517
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",13,num__BedroomsTotal,feature_importance,0.007183747248562629
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",14,num__ParkingTotal,feature_importance,0.00674261599089818
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",15,num__MainLevelBedrooms,feature_importance,0.005046279543804252
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",16,num__missingindicator_GarageSpaces,feature_importance,0.004911483121351496
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",17,num__missingindicator_MainLevelBedrooms,feature_importance,0.004293627463589199
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",18,num__GarageSpaces,feature_importance,0.003820252154390133
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",19,cat__HighSchoolDistrict_Laguna Beach Unified,feature_importance,0.0034173086186805196
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",20,cat__PostalCode_90265,feature_importance,0.0027790010616577415
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",21,cat__PostalCode_92037,feature_importance,0.00276848442929964
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",22,cat__HighSchoolDistrict_Manhattan Unified,feature_importance,0.0023572258013462425
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",23,cat__PoolPrivateYN_False,feature_importance,0.002080171926363487
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",24,num__Levels_missing,feature_importance,0.00181047165223243
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",25,cat__PostalCode_92651,feature_importance,0.0016617603004894306

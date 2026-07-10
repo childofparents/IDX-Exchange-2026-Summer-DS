@@ -1,0 +1,42 @@
+Week 5 Additional Models Summary Report
+======================================
+
+Team ds55, Beini Lan
+Notebook: 04_model_comparison.ipynb
+Task: Week 5 - Additional Models
+
+Standardized evaluation controls
+--------------------------------
+Encoded source: /Users/HP/Documents/IDX Exchange/W3 Data Preprocessing/Kelvin/model_data_knn_after_encoding.csv.gz
+Train months: 2025-05 to 2026-04
+Validation month for model settings: 2026-04
+Test month: 2026-05
+Feature count: 967
+Rows evaluated: 129,813 train, 12,024 test
+Excluded leakage fields: ListPrice, OriginalListPrice, DaysOnMarket, PurchaseContractDate.
+CloseDate and SaleMonth were used only for split/reporting, not as model features.
+No test rows were removed for the headline evaluation.
+
+Validation settings check
+-------------------------
+       family                                                         model validation_month  development_rows  validation_rows  validation_r2  validation_mae  validation_rmse  validation_mape  validation_mdape  fit_seconds
+Decision Tree                             Decision Tree (depth 18, leaf 10)          2026-04            117793            12020         0.7173    277,649.1351     840,475.7359           0.1763            0.1103       4.4328
+Decision Tree                             Decision Tree (depth 24, leaf 10)          2026-04            117793            12020         0.7186    274,757.4760     838,508.6630           0.1732            0.1080       5.7191
+Random Forest Random Forest (40 trees, depth 24, leaf 10, max_features 0.4)          2026-04            117793            12020         0.7257    251,266.7694     827,918.2733           0.1681            0.1018      17.2231
+Random Forest Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)          2026-04            117793            12020         0.7435    234,095.9631     800,495.8489           0.1518            0.0911      45.3997
+
+Final model comparison
+----------------------
+                                                        model  train_r2  test_r2     test_mae      test_rmse  test_mape  test_mdape  fit_seconds
+                                 Linear Regression (baseline)    0.6415   0.4714 363,777.9113 1,220,014.7686     0.3777      0.2241       4.2491
+                            Decision Tree (depth 24, leaf 10)    0.8094   0.4398 275,506.3772 1,255,925.9252     0.1978      0.1064       6.9261
+Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)    0.8007   0.5139 232,766.8978 1,170,010.9042     0.1824      0.0897      53.0077
+
+Interpretation
+--------------
+Best test R2: Random Forest (60 trees, depth 30, leaf 10, max_features 0.7) at 0.514.
+Best typical percentage error: Random Forest (60 trees, depth 30, leaf 10, max_features 0.7) at 9.0% MdAPE.
+Linear Regression is transparent but sensitive to extreme prices and linearity assumptions.
+The single Decision Tree improves MdAPE versus the linear baseline but performs worse on R2, showing weaker stability on high-dollar variance.
+The Random Forest gives the best Week 5 result because averaging regularized trees captures nonlinear interactions while reducing single-tree variance.
+Next iterations should document specific preprocessing and feature-engineering changes, then compare them against this experiment table.
