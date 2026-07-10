@@ -1,0 +1,2 @@
+model,experiment,train_rows,test_rows,feature_count,train_months,test_month,train_r2,test_r2,test_mae,test_rmse,test_median_absolute_error,test_mape,test_mdape,fit_seconds
+Linear Regression,A - Kelvin KNN encoded features,129813,12024,967,2025-05 to 2026-04,2026-05,0.6415406007912627,0.47141462964865455,363777.911317989,1220014.7686253479,223954.3125,0.3776635245149735,0.2240902388211382,4.241631031036377

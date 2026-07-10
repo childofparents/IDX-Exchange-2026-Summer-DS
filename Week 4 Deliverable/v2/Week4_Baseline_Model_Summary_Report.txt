@@ -1,0 +1,47 @@
+Week 4 Baseline Model Summary Report
+====================================
+
+Team ds55, Beini Lan
+Notebook: 03_baseline_model.ipynb
+Task: Week 4 - Baseline Model
+
+Cleaned/Preprocessed Data
+--------------------------------
+Train months: 2025-05 to 2026-04
+Test month: 2026-05
+Rows evaluated: 129,813 train, 12,024 test
+Feature count: 967
+Excluded leakage fields: ListPrice, OriginalListPrice, DaysOnMarket, PurchaseContractDate.
+CloseDate and SaleMonth were used only for split/reporting, not as model features.
+No test rows were removed for the headline evaluation.
+
+Baseline results
+----------------
+            model                      experiment  train_rows  test_rows  feature_count       train_months test_month  train_r2  test_r2     test_mae      test_rmse  test_median_absolute_error  test_mape  test_mdape  fit_seconds
+Linear Regression A - Kelvin KNN encoded features      129813      12024            967 2025-05 to 2026-04    2026-05    0.6415   0.4714 363,777.9113 1,220,014.7686                223,954.3125     0.3777      0.2241       4.2416
+
+Interpretation
+--------------
+The Linear Regression baseline explains 0.471 of variance on the full May 2026 test month.
+The typical holdout percentage error is 22.4% MdAPE; mean percentage error is 37.8% MAPE.
+Average absolute dollar error is $363,778.
+The model is transparent, but high-end outliers and nonlinear location effects limit performance.
+
+Largest absolute coefficients
+-----------------------------
+                                     feature     coefficient
+                       cat__PostalCode_93108  5,323,334.5000
+                       cat__PostalCode_90210  4,587,085.0000
+                       cat__PostalCode_92657  3,538,845.7500
+                       cat__PostalCode_90265  3,522,194.0000
+                       cat__PostalCode_90077  3,312,316.2500
+                       cat__PostalCode_90402  3,205,876.7500
+                       cat__PostalCode_90024  3,178,755.0000
+cat__HighSchoolDistrict_Newport Mesa Unified  3,128,514.2500
+                       cat__PostalCode_90272  2,998,505.7500
+ num__missingindicator_BathroomsTotalInteger  2,698,046.0000
+                       cat__PostalCode_92014  2,635,606.5000
+                       cat__PostalCode_94022  2,599,937.7500
+                       cat__PostalCode_92626 -2,582,138.0000
+                       cat__PostalCode_90049  2,576,824.7500
+                       cat__PostalCode_90266  2,493,499.5000
