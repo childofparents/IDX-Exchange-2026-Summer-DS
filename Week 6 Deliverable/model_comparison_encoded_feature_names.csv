@@ -996,320 +996,199 @@ cat__PostalCode_95973
 cat__PostalCode_95988
 cat__PostalCode_96021
 cat__PostalCode_infrequent_sklearn
-cat__SchoolDistrictSpatialCluster_Elementary: Adelanto Elementary | High: Victor Valley Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Alisal Union | High: Salinas Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Alpine Union Elementary | High: Grossmont Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Alta Loma Elementary | High: Chaffey Joint Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Alum Rock Union Elementary | High: East Side Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Anaheim Elementary | High: Anaheim Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Atwater Elementary | High: Merced Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Bakersfield City | High: Kern High
-cat__SchoolDistrictSpatialCluster_Elementary: Belmont-Redwood Shores Elementary | High: Sequoia Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Berryessa Union Elementary | High: East Side Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Brentwood Union | High: Liberty Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Buena Park Elementary | High: Fullerton Joint Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Burlingame Elementary | High: San Mateo Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Byron Union Elementary | High: Liberty Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Cajon Valley Union | High: Grossmont Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Cambrian | High: Campbell Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Campbell Union | High: Campbell Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Cardiff Elementary | High: San Dieguito Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Castaic Union | High: William S. Hart Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Central Elementary | High: Chaffey Joint Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Centralia Elementary | High: Anaheim Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Chowchilla Elementary | High: Chowchilla Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Chula Vista Elementary | High: Sweetwater Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Cucamonga Elementary | High: Chaffey Joint Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Cupertino Union | High: Fremont Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Cypress Elementary | High: Anaheim Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Del Mar Union Elementary | High: San Dieguito Union High
-cat__SchoolDistrictSpatialCluster_Elementary: East Whittier City Elementary | High: Whittier Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Eastside Union Elementary | High: Antelope Valley Union High
-cat__SchoolDistrictSpatialCluster_Elementary: El Monte City | High: El Monte Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Encinitas Union Elementary | High: San Dieguito Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Escondido Union | High: Escondido Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Etiwanda Elementary | High: Chaffey Joint Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Evergreen Elementary | High: East Side Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Fallbrook Union Elementary | High: Fallbrook Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Fountain Valley Elementary | High: Huntington Beach Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Franklin-McKinley Elementary | High: East Side Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Fullerton Elementary | High: Fullerton Joint Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Hawthorne | High: Centinela Valley Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Helendale Elementary | High: Victor Valley Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Hermosa Beach City Elementary | High: No boundary match
-cat__SchoolDistrictSpatialCluster_Elementary: Hillsborough City Elementary | High: San Mateo Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Hollister | High: San Benito High
-cat__SchoolDistrictSpatialCluster_Elementary: Hueneme Elementary | High: Oxnard Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Huntington Beach City Elementary | High: Huntington Beach Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Jamul-Dulzura Union Elementary | High: Grossmont Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Jefferson Elementary | High: Jefferson Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Julian Union Elementary | High: Julian Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Keppel Union Elementary | High: Antelope Valley Union High
-cat__SchoolDistrictSpatialCluster_Elementary: King City Union | High: South Monterey County Joint Union High
-cat__SchoolDistrictSpatialCluster_Elementary: La Habra City Elementary | High: Fullerton Joint Union High
-cat__SchoolDistrictSpatialCluster_Elementary: La Mesa-Spring Valley | High: Grossmont Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Lafayette Elementary | High: Acalanes Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Lakeside Union Elementary | High: Grossmont Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Lancaster Elementary | High: Antelope Valley Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Las Lomitas Elementary | High: Sequoia Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Lawndale Elementary | High: Centinela Valley Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Lemon Grove | High: Grossmont Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Little Lake City Elementary | High: Whittier Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Live Oak Elementary | High: Santa Cruz City High
-cat__SchoolDistrictSpatialCluster_Elementary: Los Altos Elementary | High: Mountain View-Los Altos Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Los Gatos Union Elementary | High: Los Gatos-Saratoga Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Lowell Joint | High: Fullerton Joint Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Magnolia Elementary | High: Anaheim Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Menifee Union | High: Perris Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Menlo Park City Elementary | High: Sequoia Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Merced City Elementary | High: Merced Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Moraga Elementary | High: Acalanes Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Moreland | High: Campbell Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Mountain View Elementary | High: Chaffey Joint Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Mountain View Elementary | High: El Monte Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Mountain View Whisman | High: Mountain View-Los Altos Union High
-cat__SchoolDistrictSpatialCluster_Elementary: National Elementary | High: Sweetwater Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Newhall | High: William S. Hart Union High
-cat__SchoolDistrictSpatialCluster_Elementary: No boundary match | High: No boundary match
-cat__SchoolDistrictSpatialCluster_Elementary: Norris Elementary | High: Kern High
-cat__SchoolDistrictSpatialCluster_Elementary: Nuview Union | High: Perris Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Oak Grove Elementary | High: East Side Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Oakley Union Elementary | High: Liberty Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Ocean View | High: Huntington Beach Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Ontario-Montclair | High: Chaffey Joint Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Orcutt Union Elementary | High: Santa Maria Joint Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Orinda Union | High: Acalanes Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Oroville City Elementary | High: Oroville Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Oxnard | High: Oxnard Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Pacifica | High: Jefferson Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Palmdale Elementary | High: Antelope Valley Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Panama-Buena Vista Union | High: Kern High
-cat__SchoolDistrictSpatialCluster_Elementary: Perris Elementary | High: Perris Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Pleasant Valley | High: Oxnard Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Rancho Santa Fe Elementary | High: San Dieguito Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Redwood City Elementary | High: Sequoia Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Rio Elementary | High: Oxnard Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Romoland Elementary | High: Perris Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Rosedale Union Elementary | High: Kern High
-cat__SchoolDistrictSpatialCluster_Elementary: Rosemead Elementary | High: El Monte Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Salinas City Elementary | High: Salinas Union High
-cat__SchoolDistrictSpatialCluster_Elementary: San Bruno Park Elementary | High: San Mateo Union High
-cat__SchoolDistrictSpatialCluster_Elementary: San Carlos Elementary | High: Sequoia Union High
-cat__SchoolDistrictSpatialCluster_Elementary: San Mateo-Foster City | High: San Mateo Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Santa Cruz City Elementary | High: Santa Cruz City High
-cat__SchoolDistrictSpatialCluster_Elementary: Santa Maria-Bonita | High: Santa Maria Joint Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Santee | High: Grossmont Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Saratoga Union Elementary | High: Los Gatos-Saratoga Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Saugus Union | High: William S. Hart Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Savanna Elementary | High: Anaheim Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Solana Beach Elementary | High: San Dieguito Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Soquel Union Elementary | High: Santa Cruz City High
-cat__SchoolDistrictSpatialCluster_Elementary: South Bay Union | High: Sweetwater Union High
-cat__SchoolDistrictSpatialCluster_Elementary: South Whittier Elementary | High: Whittier Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Sulphur Springs Union | High: William S. Hart Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Sunnyvale | High: Fremont Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Thermalito Union Elementary | High: Oroville Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Union Elementary | High: Campbell Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Victor Elementary | High: Victor Valley Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Walnut Creek Elementary | High: Acalanes Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Washington Union Elementary | High: Salinas Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Weaver Union | High: Merced Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Westminster | High: Huntington Beach Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Westside Union Elementary | High: Antelope Valley Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Whittier City | High: Whittier Union High
-cat__SchoolDistrictSpatialCluster_Elementary: Wilsona Elementary | High: Antelope Valley Union High
-cat__SchoolDistrictSpatialCluster_Unified: ABC Unified
-cat__SchoolDistrictSpatialCluster_Unified: Acton-Agua Dulce Unified
-cat__SchoolDistrictSpatialCluster_Unified: Alameda Unified
-cat__SchoolDistrictSpatialCluster_Unified: Albany City Unified
-cat__SchoolDistrictSpatialCluster_Unified: Alhambra Unified
-cat__SchoolDistrictSpatialCluster_Unified: Alvord Unified
-cat__SchoolDistrictSpatialCluster_Unified: Antioch Unified
-cat__SchoolDistrictSpatialCluster_Unified: Apple Valley Unified
-cat__SchoolDistrictSpatialCluster_Unified: Arcadia Unified
-cat__SchoolDistrictSpatialCluster_Unified: Atascadero Unified
-cat__SchoolDistrictSpatialCluster_Unified: Azusa Unified
-cat__SchoolDistrictSpatialCluster_Unified: Baldwin Park Unified
-cat__SchoolDistrictSpatialCluster_Unified: Banning Unified
-cat__SchoolDistrictSpatialCluster_Unified: Banta Unified
-cat__SchoolDistrictSpatialCluster_Unified: Barstow Unified
-cat__SchoolDistrictSpatialCluster_Unified: Bassett Unified
-cat__SchoolDistrictSpatialCluster_Unified: Bear Valley Unified
-cat__SchoolDistrictSpatialCluster_Unified: Beaumont Unified
-cat__SchoolDistrictSpatialCluster_Unified: Bellflower Unified
-cat__SchoolDistrictSpatialCluster_Unified: Berkeley Unified
-cat__SchoolDistrictSpatialCluster_Unified: Beverly Hills Unified
-cat__SchoolDistrictSpatialCluster_Unified: Bonita Unified
-cat__SchoolDistrictSpatialCluster_Unified: Bonsall Unified
-cat__SchoolDistrictSpatialCluster_Unified: Borrego Springs Unified
-cat__SchoolDistrictSpatialCluster_Unified: Brea-Olinda Unified
-cat__SchoolDistrictSpatialCluster_Unified: Burbank Unified
-cat__SchoolDistrictSpatialCluster_Unified: Cabrillo Unified
-cat__SchoolDistrictSpatialCluster_Unified: Capistrano Unified
-cat__SchoolDistrictSpatialCluster_Unified: Carlsbad Unified
-cat__SchoolDistrictSpatialCluster_Unified: Carmel Unified
-cat__SchoolDistrictSpatialCluster_Unified: Castro Valley Unified
-cat__SchoolDistrictSpatialCluster_Unified: Charter Oak Unified
-cat__SchoolDistrictSpatialCluster_Unified: Chico Unified
-cat__SchoolDistrictSpatialCluster_Unified: Chino Valley Unified
-cat__SchoolDistrictSpatialCluster_Unified: Claremont Unified
-cat__SchoolDistrictSpatialCluster_Unified: Clovis Unified
-cat__SchoolDistrictSpatialCluster_Unified: Coachella Valley Unified
-cat__SchoolDistrictSpatialCluster_Unified: Coast Unified
-cat__SchoolDistrictSpatialCluster_Unified: Colton Joint Unified
-cat__SchoolDistrictSpatialCluster_Unified: Compton Unified
-cat__SchoolDistrictSpatialCluster_Unified: Conejo Valley Unified
-cat__SchoolDistrictSpatialCluster_Unified: Corona-Norco Unified
-cat__SchoolDistrictSpatialCluster_Unified: Coronado Unified
-cat__SchoolDistrictSpatialCluster_Unified: Covina-Valley Unified
-cat__SchoolDistrictSpatialCluster_Unified: Culver City Unified
-cat__SchoolDistrictSpatialCluster_Unified: Desert Sands Unified
-cat__SchoolDistrictSpatialCluster_Unified: Downey Unified
-cat__SchoolDistrictSpatialCluster_Unified: Duarte Unified
-cat__SchoolDistrictSpatialCluster_Unified: Dublin Unified
-cat__SchoolDistrictSpatialCluster_Unified: El Rancho Unified
-cat__SchoolDistrictSpatialCluster_Unified: El Segundo Unified
-cat__SchoolDistrictSpatialCluster_Unified: El Tejon Unified
-cat__SchoolDistrictSpatialCluster_Unified: Elk Grove Unified
-cat__SchoolDistrictSpatialCluster_Unified: Fairfield-Suisun Unified
-cat__SchoolDistrictSpatialCluster_Unified: Fillmore Unified
-cat__SchoolDistrictSpatialCluster_Unified: Fontana Unified
-cat__SchoolDistrictSpatialCluster_Unified: Fort Bragg Unified
-cat__SchoolDistrictSpatialCluster_Unified: Fremont Unified
-cat__SchoolDistrictSpatialCluster_Unified: Fresno Unified
-cat__SchoolDistrictSpatialCluster_Unified: Garden Grove Unified
-cat__SchoolDistrictSpatialCluster_Unified: Gilroy Unified
-cat__SchoolDistrictSpatialCluster_Unified: Glendale Unified
-cat__SchoolDistrictSpatialCluster_Unified: Glendora Unified
-cat__SchoolDistrictSpatialCluster_Unified: Hacienda la Puente Unified
-cat__SchoolDistrictSpatialCluster_Unified: Hayward Unified
-cat__SchoolDistrictSpatialCluster_Unified: Hemet Unified
-cat__SchoolDistrictSpatialCluster_Unified: Hesperia Unified
-cat__SchoolDistrictSpatialCluster_Unified: Inglewood Unified
-cat__SchoolDistrictSpatialCluster_Unified: Irvine Unified
-cat__SchoolDistrictSpatialCluster_Unified: John Swett Unified
-cat__SchoolDistrictSpatialCluster_Unified: Jurupa Unified
-cat__SchoolDistrictSpatialCluster_Unified: Kelseyville Unified
-cat__SchoolDistrictSpatialCluster_Unified: Konocti Unified
-cat__SchoolDistrictSpatialCluster_Unified: La Canada Unified
-cat__SchoolDistrictSpatialCluster_Unified: Laguna Beach Unified
-cat__SchoolDistrictSpatialCluster_Unified: Lake Elsinore Unified
-cat__SchoolDistrictSpatialCluster_Unified: Lakeport Unified
-cat__SchoolDistrictSpatialCluster_Unified: Lammersville Joint Unified
-cat__SchoolDistrictSpatialCluster_Unified: Las Virgenes Unified
-cat__SchoolDistrictSpatialCluster_Unified: Livermore Valley Joint Unified
-cat__SchoolDistrictSpatialCluster_Unified: Lodi Unified
-cat__SchoolDistrictSpatialCluster_Unified: Lompoc Unified
-cat__SchoolDistrictSpatialCluster_Unified: Long Beach Unified
-cat__SchoolDistrictSpatialCluster_Unified: Los Alamitos Unified
-cat__SchoolDistrictSpatialCluster_Unified: Los Angeles Unified
-cat__SchoolDistrictSpatialCluster_Unified: Los Banos Unified
-cat__SchoolDistrictSpatialCluster_Unified: Lucerne Valley Unified
-cat__SchoolDistrictSpatialCluster_Unified: Lucia Mar Unified
-cat__SchoolDistrictSpatialCluster_Unified: Lynwood Unified
-cat__SchoolDistrictSpatialCluster_Unified: Madera Unified
-cat__SchoolDistrictSpatialCluster_Unified: Manhattan Beach Unified
-cat__SchoolDistrictSpatialCluster_Unified: Manteca Unified
-cat__SchoolDistrictSpatialCluster_Unified: Mariposa County Unified
-cat__SchoolDistrictSpatialCluster_Unified: Martinez Unified
-cat__SchoolDistrictSpatialCluster_Unified: Middletown Unified
-cat__SchoolDistrictSpatialCluster_Unified: Milpitas Unified
-cat__SchoolDistrictSpatialCluster_Unified: Mojave Unified
-cat__SchoolDistrictSpatialCluster_Unified: Monrovia Unified
-cat__SchoolDistrictSpatialCluster_Unified: Montebello Unified
-cat__SchoolDistrictSpatialCluster_Unified: Monterey Peninsula Unified
-cat__SchoolDistrictSpatialCluster_Unified: Moorpark Unified
-cat__SchoolDistrictSpatialCluster_Unified: Moreno Valley Unified
-cat__SchoolDistrictSpatialCluster_Unified: Morgan Hill Unified
-cat__SchoolDistrictSpatialCluster_Unified: Morongo Unified
-cat__SchoolDistrictSpatialCluster_Unified: Mountain Empire Unified
-cat__SchoolDistrictSpatialCluster_Unified: Mt. Diablo Unified
-cat__SchoolDistrictSpatialCluster_Unified: Murrieta Valley Unified
-cat__SchoolDistrictSpatialCluster_Unified: New Haven Unified
-cat__SchoolDistrictSpatialCluster_Unified: Newark Unified
-cat__SchoolDistrictSpatialCluster_Unified: Newport-Mesa Unified
-cat__SchoolDistrictSpatialCluster_Unified: North Monterey County Unified
-cat__SchoolDistrictSpatialCluster_Unified: Norwalk-La Mirada Unified
-cat__SchoolDistrictSpatialCluster_Unified: Oak Park Unified
-cat__SchoolDistrictSpatialCluster_Unified: Oakland Unified
-cat__SchoolDistrictSpatialCluster_Unified: Oceanside Unified
-cat__SchoolDistrictSpatialCluster_Unified: Ojai Unified
-cat__SchoolDistrictSpatialCluster_Unified: Orange Unified
-cat__SchoolDistrictSpatialCluster_Unified: Orland Joint Unified
-cat__SchoolDistrictSpatialCluster_Unified: Pacific Grove Unified
-cat__SchoolDistrictSpatialCluster_Unified: Pajaro Valley Unified
-cat__SchoolDistrictSpatialCluster_Unified: Palm Springs Unified
-cat__SchoolDistrictSpatialCluster_Unified: Palo Alto Unified
-cat__SchoolDistrictSpatialCluster_Unified: Palo Verde Unified
-cat__SchoolDistrictSpatialCluster_Unified: Palos Verdes Peninsula Unified
-cat__SchoolDistrictSpatialCluster_Unified: Paradise Unified
-cat__SchoolDistrictSpatialCluster_Unified: Paramount Unified
-cat__SchoolDistrictSpatialCluster_Unified: Pasadena Unified
-cat__SchoolDistrictSpatialCluster_Unified: Paso Robles Joint Unified
-cat__SchoolDistrictSpatialCluster_Unified: Piedmont City Unified
-cat__SchoolDistrictSpatialCluster_Unified: Pittsburg Unified
-cat__SchoolDistrictSpatialCluster_Unified: Placentia-Yorba Linda Unified
-cat__SchoolDistrictSpatialCluster_Unified: Pleasanton Unified
-cat__SchoolDistrictSpatialCluster_Unified: Pomona Unified
-cat__SchoolDistrictSpatialCluster_Unified: Poway Unified
-cat__SchoolDistrictSpatialCluster_Unified: Ramona City Unified
-cat__SchoolDistrictSpatialCluster_Unified: Redlands Unified
-cat__SchoolDistrictSpatialCluster_Unified: Redondo Beach Unified
-cat__SchoolDistrictSpatialCluster_Unified: Rialto Unified
-cat__SchoolDistrictSpatialCluster_Unified: Rim of the World Unified
-cat__SchoolDistrictSpatialCluster_Unified: River Delta Joint Unified
-cat__SchoolDistrictSpatialCluster_Unified: Riverside Unified
-cat__SchoolDistrictSpatialCluster_Unified: Rowland Unified
-cat__SchoolDistrictSpatialCluster_Unified: Sacramento City Unified
-cat__SchoolDistrictSpatialCluster_Unified: Saddleback Valley Unified
-cat__SchoolDistrictSpatialCluster_Unified: San Bernardino City Unified
-cat__SchoolDistrictSpatialCluster_Unified: San Diego Unified
-cat__SchoolDistrictSpatialCluster_Unified: San Francisco Unified
-cat__SchoolDistrictSpatialCluster_Unified: San Gabriel Unified
-cat__SchoolDistrictSpatialCluster_Unified: San Jacinto Unified
-cat__SchoolDistrictSpatialCluster_Unified: San Jose Unified
-cat__SchoolDistrictSpatialCluster_Unified: San Leandro Unified
-cat__SchoolDistrictSpatialCluster_Unified: San Lorenzo Unified
-cat__SchoolDistrictSpatialCluster_Unified: San Lorenzo Valley Unified
-cat__SchoolDistrictSpatialCluster_Unified: San Luis Coastal Unified
-cat__SchoolDistrictSpatialCluster_Unified: San Marcos Unified
-cat__SchoolDistrictSpatialCluster_Unified: San Marino Unified
-cat__SchoolDistrictSpatialCluster_Unified: San Ramon Valley Unified
-cat__SchoolDistrictSpatialCluster_Unified: Santa Ana Unified
-cat__SchoolDistrictSpatialCluster_Unified: Santa Barbara Unified
-cat__SchoolDistrictSpatialCluster_Unified: Santa Clara Unified
-cat__SchoolDistrictSpatialCluster_Unified: Santa Monica-Malibu Unified
-cat__SchoolDistrictSpatialCluster_Unified: Santa Paula Unified
-cat__SchoolDistrictSpatialCluster_Unified: Scotts Valley Unified
-cat__SchoolDistrictSpatialCluster_Unified: Simi Valley Unified
-cat__SchoolDistrictSpatialCluster_Unified: Snowline Joint Unified
-cat__SchoolDistrictSpatialCluster_Unified: South Pasadena Unified
-cat__SchoolDistrictSpatialCluster_Unified: South San Francisco Unified
-cat__SchoolDistrictSpatialCluster_Unified: Southern Kern Unified
-cat__SchoolDistrictSpatialCluster_Unified: Stockton Unified
-cat__SchoolDistrictSpatialCluster_Unified: Tehachapi Unified
-cat__SchoolDistrictSpatialCluster_Unified: Temecula Valley Unified
-cat__SchoolDistrictSpatialCluster_Unified: Temple City Unified
-cat__SchoolDistrictSpatialCluster_Unified: Templeton Unified
-cat__SchoolDistrictSpatialCluster_Unified: Torrance Unified
-cat__SchoolDistrictSpatialCluster_Unified: Tracy Joint Unified
-cat__SchoolDistrictSpatialCluster_Unified: Travis Unified
-cat__SchoolDistrictSpatialCluster_Unified: Tustin Unified
-cat__SchoolDistrictSpatialCluster_Unified: Twin Rivers Unified
-cat__SchoolDistrictSpatialCluster_Unified: Upland Unified
-cat__SchoolDistrictSpatialCluster_Unified: Upper Lake Unified
-cat__SchoolDistrictSpatialCluster_Unified: Vacaville Unified
-cat__SchoolDistrictSpatialCluster_Unified: Val Verde Unified
-cat__SchoolDistrictSpatialCluster_Unified: Vallejo City Unified
-cat__SchoolDistrictSpatialCluster_Unified: Valley Center-Pauma Unified
-cat__SchoolDistrictSpatialCluster_Unified: Ventura Unified
-cat__SchoolDistrictSpatialCluster_Unified: Visalia Unified
-cat__SchoolDistrictSpatialCluster_Unified: Vista Unified
-cat__SchoolDistrictSpatialCluster_Unified: Walnut Valley Unified
-cat__SchoolDistrictSpatialCluster_Unified: West Contra Costa Unified
-cat__SchoolDistrictSpatialCluster_Unified: West Covina Unified
-cat__SchoolDistrictSpatialCluster_Unified: Willows Unified
-cat__SchoolDistrictSpatialCluster_Unified: Wiseburn Unified
-cat__SchoolDistrictSpatialCluster_Unified: Yosemite Unified
-cat__SchoolDistrictSpatialCluster_Unified: Yucaipa-Calimesa Joint Unified
-cat__SchoolDistrictSpatialCluster_infrequent_sklearn
+cat__DistrictName_ABC Unified
+cat__DistrictName_Acton-Agua Dulce Unified
+cat__DistrictName_Alameda Unified
+cat__DistrictName_Albany City Unified
+cat__DistrictName_Alhambra Unified
+cat__DistrictName_Alvord Unified
+cat__DistrictName_Antioch Unified
+cat__DistrictName_Apple Valley Unified
+cat__DistrictName_Arcadia Unified
+cat__DistrictName_Atascadero Unified
+cat__DistrictName_Azusa Unified
+cat__DistrictName_Baldwin Park Unified
+cat__DistrictName_Banning Unified
+cat__DistrictName_Banta Unified
+cat__DistrictName_Barstow Unified
+cat__DistrictName_Bassett Unified
+cat__DistrictName_Bear Valley Unified
+cat__DistrictName_Beaumont Unified
+cat__DistrictName_Bellflower Unified
+cat__DistrictName_Berkeley Unified
+cat__DistrictName_Beverly Hills Unified
+cat__DistrictName_Bonita Unified
+cat__DistrictName_Bonsall Unified
+cat__DistrictName_Borrego Springs Unified
+cat__DistrictName_Brea-Olinda Unified
+cat__DistrictName_Burbank Unified
+cat__DistrictName_Cabrillo Unified
+cat__DistrictName_Capistrano Unified
+cat__DistrictName_Carlsbad Unified
+cat__DistrictName_Carmel Unified
+cat__DistrictName_Castro Valley Unified
+cat__DistrictName_Charter Oak Unified
+cat__DistrictName_Chico Unified
+cat__DistrictName_Chino Valley Unified
+cat__DistrictName_Claremont Unified
+cat__DistrictName_Clovis Unified
+cat__DistrictName_Coachella Valley Unified
+cat__DistrictName_Coast Unified
+cat__DistrictName_Colton Joint Unified
+cat__DistrictName_Compton Unified
+cat__DistrictName_Conejo Valley Unified
+cat__DistrictName_Corona-Norco Unified
+cat__DistrictName_Coronado Unified
+cat__DistrictName_Covina-Valley Unified
+cat__DistrictName_Culver City Unified
+cat__DistrictName_Desert Sands Unified
+cat__DistrictName_Downey Unified
+cat__DistrictName_Duarte Unified
+cat__DistrictName_Dublin Unified
+cat__DistrictName_El Rancho Unified
+cat__DistrictName_El Segundo Unified
+cat__DistrictName_El Tejon Unified
+cat__DistrictName_Elk Grove Unified
+cat__DistrictName_Fairfield-Suisun Unified
+cat__DistrictName_Fillmore Unified
+cat__DistrictName_Fontana Unified
+cat__DistrictName_Fort Bragg Unified
+cat__DistrictName_Fremont Unified
+cat__DistrictName_Fresno Unified
+cat__DistrictName_Garden Grove Unified
+cat__DistrictName_Gilroy Unified
+cat__DistrictName_Glendale Unified
+cat__DistrictName_Glendora Unified
+cat__DistrictName_Hacienda la Puente Unified
+cat__DistrictName_Hayward Unified
+cat__DistrictName_Hemet Unified
+cat__DistrictName_Hesperia Unified
+cat__DistrictName_Inglewood Unified
+cat__DistrictName_Irvine Unified
+cat__DistrictName_John Swett Unified
+cat__DistrictName_Jurupa Unified
+cat__DistrictName_Kelseyville Unified
+cat__DistrictName_Konocti Unified
+cat__DistrictName_La Canada Unified
+cat__DistrictName_Laguna Beach Unified
+cat__DistrictName_Lake Elsinore Unified
+cat__DistrictName_Lakeport Unified
+cat__DistrictName_Lammersville Joint Unified
+cat__DistrictName_Las Virgenes Unified
+cat__DistrictName_Livermore Valley Joint Unified
+cat__DistrictName_Lodi Unified
+cat__DistrictName_Lompoc Unified
+cat__DistrictName_Long Beach Unified
+cat__DistrictName_Los Alamitos Unified
+cat__DistrictName_Los Angeles Unified
+cat__DistrictName_Los Banos Unified
+cat__DistrictName_Lucerne Valley Unified
+cat__DistrictName_Lucia Mar Unified
+cat__DistrictName_Lynwood Unified
+cat__DistrictName_Madera Unified
+cat__DistrictName_Manhattan Beach Unified
+cat__DistrictName_Manteca Unified
+cat__DistrictName_Mariposa County Unified
+cat__DistrictName_Martinez Unified
+cat__DistrictName_Middletown Unified
+cat__DistrictName_Milpitas Unified
+cat__DistrictName_Mojave Unified
+cat__DistrictName_Monrovia Unified
+cat__DistrictName_Montebello Unified
+cat__DistrictName_Monterey Peninsula Unified
+cat__DistrictName_Moorpark Unified
+cat__DistrictName_Moreno Valley Unified
+cat__DistrictName_Morgan Hill Unified
+cat__DistrictName_Morongo Unified
+cat__DistrictName_Mountain Empire Unified
+cat__DistrictName_Mt. Diablo Unified
+cat__DistrictName_Murrieta Valley Unified
+cat__DistrictName_New Haven Unified
+cat__DistrictName_Newark Unified
+cat__DistrictName_Newport-Mesa Unified
+cat__DistrictName_No boundary match
+cat__DistrictName_North Monterey County Unified
+cat__DistrictName_Norwalk-La Mirada Unified
+cat__DistrictName_Oak Park Unified
+cat__DistrictName_Oakland Unified
+cat__DistrictName_Oceanside Unified
+cat__DistrictName_Ojai Unified
+cat__DistrictName_Orange Unified
+cat__DistrictName_Orland Joint Unified
+cat__DistrictName_Pacific Grove Unified
+cat__DistrictName_Pajaro Valley Unified
+cat__DistrictName_Palm Springs Unified
+cat__DistrictName_Palo Alto Unified
+cat__DistrictName_Palo Verde Unified
+cat__DistrictName_Palos Verdes Peninsula Unified
+cat__DistrictName_Paradise Unified
+cat__DistrictName_Paramount Unified
+cat__DistrictName_Pasadena Unified
+cat__DistrictName_Paso Robles Joint Unified
+cat__DistrictName_Piedmont City Unified
+cat__DistrictName_Pittsburg Unified
+cat__DistrictName_Placentia-Yorba Linda Unified
+cat__DistrictName_Pleasanton Unified
+cat__DistrictName_Pomona Unified
+cat__DistrictName_Poway Unified
+cat__DistrictName_Ramona City Unified
+cat__DistrictName_Redlands Unified
+cat__DistrictName_Redondo Beach Unified
+cat__DistrictName_Rialto Unified
+cat__DistrictName_Rim of the World Unified
+cat__DistrictName_River Delta Joint Unified
+cat__DistrictName_Riverside Unified
+cat__DistrictName_Rowland Unified
+cat__DistrictName_Sacramento City Unified
+cat__DistrictName_Saddleback Valley Unified
+cat__DistrictName_San Bernardino City Unified
+cat__DistrictName_San Diego Unified
+cat__DistrictName_San Francisco Unified
+cat__DistrictName_San Gabriel Unified
+cat__DistrictName_San Jacinto Unified
+cat__DistrictName_San Jose Unified
+cat__DistrictName_San Leandro Unified
+cat__DistrictName_San Lorenzo Unified
+cat__DistrictName_San Lorenzo Valley Unified
+cat__DistrictName_San Luis Coastal Unified
+cat__DistrictName_San Marcos Unified
+cat__DistrictName_San Marino Unified
+cat__DistrictName_San Ramon Valley Unified
+cat__DistrictName_Santa Ana Unified
+cat__DistrictName_Santa Barbara Unified
+cat__DistrictName_Santa Clara Unified
+cat__DistrictName_Santa Monica-Malibu Unified
+cat__DistrictName_Santa Paula Unified
+cat__DistrictName_Scotts Valley Unified
+cat__DistrictName_Simi Valley Unified
+cat__DistrictName_Snowline Joint Unified
+cat__DistrictName_South Pasadena Unified
+cat__DistrictName_South San Francisco Unified
+cat__DistrictName_Southern Kern Unified
+cat__DistrictName_Stockton Unified
+cat__DistrictName_Tehachapi Unified
+cat__DistrictName_Temecula Valley Unified
+cat__DistrictName_Temple City Unified
+cat__DistrictName_Templeton Unified
+cat__DistrictName_Torrance Unified
+cat__DistrictName_Tracy Joint Unified
+cat__DistrictName_Travis Unified
+cat__DistrictName_Tustin Unified
+cat__DistrictName_Twin Rivers Unified
+cat__DistrictName_Upland Unified
+cat__DistrictName_Upper Lake Unified
+cat__DistrictName_Vacaville Unified
+cat__DistrictName_Val Verde Unified
+cat__DistrictName_Vallejo City Unified
+cat__DistrictName_Valley Center-Pauma Unified
+cat__DistrictName_Ventura Unified
+cat__DistrictName_Visalia Unified
+cat__DistrictName_Vista Unified
+cat__DistrictName_Walnut Valley Unified
+cat__DistrictName_West Contra Costa Unified
+cat__DistrictName_West Covina Unified
+cat__DistrictName_Willows Unified
+cat__DistrictName_Wiseburn Unified
+cat__DistrictName_Yosemite Unified
+cat__DistrictName_Yucaipa-Calimesa Joint Unified
+cat__DistrictName_infrequent_sklearn

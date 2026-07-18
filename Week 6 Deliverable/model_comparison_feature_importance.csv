@@ -1,76 +1,76 @@
 model,rank,feature,importance_type,value
-Linear Regression (baseline),1,cat__SchoolDistrictSpatialCluster_Unified: Newport-Mesa Unified,coefficient,4641986.060980285
-Linear Regression (baseline),2,cat__PostalCode_93108,coefficient,4423357.755263056
-Linear Regression (baseline),3,cat__SchoolDistrictSpatialCluster_Elementary: Las Lomitas Elementary | High: Sequoia Union High,coefficient,4241805.733978345
-Linear Regression (baseline),4,cat__PostalCode_94010,coefficient,4213966.395856445
-Linear Regression (baseline),5,cat__SchoolDistrictSpatialCluster_Unified: Beverly Hills Unified,coefficient,3944093.6371567985
-Linear Regression (baseline),6,cat__PostalCode_92626,coefficient,-3774069.81087361
-Linear Regression (baseline),7,cat__SchoolDistrictSpatialCluster_Elementary: Menlo Park City Elementary | High: Sequoia Union High,coefficient,3770439.57115344
-Linear Regression (baseline),8,cat__SchoolDistrictSpatialCluster_Elementary: Cardiff Elementary | High: San Dieguito Union High,coefficient,3647165.457610115
-Linear Regression (baseline),9,cat__PostalCode_92627,coefficient,-3587055.874299081
-Linear Regression (baseline),10,cat__PostalCode_90024,coefficient,3574305.9097041665
-Linear Regression (baseline),11,cat__SchoolDistrictSpatialCluster_Unified: Laguna Beach Unified,coefficient,3561080.2478427696
-Linear Regression (baseline),12,cat__PostalCode_90077,coefficient,3378172.4915556926
-Linear Regression (baseline),13,cat__PostalCode_90272,coefficient,3155437.8447665707
-Linear Regression (baseline),14,cat__PostalCode_90210,coefficient,2996324.8636562866
-Linear Regression (baseline),15,cat__SchoolDistrictSpatialCluster_Elementary: Burlingame Elementary | High: San Mateo Union High,coefficient,-2913731.164801078
-Linear Regression (baseline),16,cat__PostalCode_90049,coefficient,2805278.555312992
-Linear Regression (baseline),17,cat__PostalCode_92007,coefficient,-2547380.580513577
-Linear Regression (baseline),18,cat__SchoolDistrictSpatialCluster_Unified: Manhattan Beach Unified,coefficient,2478754.7816778524
-Linear Regression (baseline),19,cat__PostalCode_92014,coefficient,2457083.0774291824
-Linear Regression (baseline),20,cat__PostalCode_90402,coefficient,2422055.8431227
-Linear Regression (baseline),21,cat__PostalCode_90265,coefficient,2391098.7871145452
-Linear Regression (baseline),22,cat__PostalCode_92037,coefficient,2151842.816687857
-Linear Regression (baseline),23,cat__PostalCode_93924,coefficient,-2094287.8239727428
-Linear Regression (baseline),24,cat__PostalCode_92657,coefficient,2078803.071693057
-Linear Regression (baseline),25,cat__SchoolDistrictSpatialCluster_Unified: Coronado Unified,coefficient,2059800.3102426422
-"Decision Tree (depth 24, leaf 10)",1,num__LogLivingArea,feature_importance,0.4162300733497656
-"Decision Tree (depth 24, leaf 10)",2,num__BathroomsTotalInteger,feature_importance,0.10639544126791038
-"Decision Tree (depth 24, leaf 10)",3,num__Latitude,feature_importance,0.08889662835542585
-"Decision Tree (depth 24, leaf 10)",4,num__Longitude,feature_importance,0.07515951766089289
-"Decision Tree (depth 24, leaf 10)",5,num__LivingArea,feature_importance,0.05579095789923477
-"Decision Tree (depth 24, leaf 10)",6,cat__SchoolDistrictSpatialCluster_Unified: Newport-Mesa Unified,feature_importance,0.03503209220825056
-"Decision Tree (depth 24, leaf 10)",7,num__YearBuilt,feature_importance,0.02630792745921203
-"Decision Tree (depth 24, leaf 10)",8,num__PoolPrivateYN_missing_ind,feature_importance,0.01673155525985588
-"Decision Tree (depth 24, leaf 10)",9,num__ParkingTotal,feature_importance,0.016074592850541154
-"Decision Tree (depth 24, leaf 10)",10,num__LivingArea_missing_ind,feature_importance,0.016065981690698068
-"Decision Tree (depth 24, leaf 10)",11,num__has_wood,feature_importance,0.014707377288598401
-"Decision Tree (depth 24, leaf 10)",12,cat__PoolPrivateYN_Unknown,feature_importance,0.012571105101665023
-"Decision Tree (depth 24, leaf 10)",13,num__AssociationFee,feature_importance,0.011272658522143337
-"Decision Tree (depth 24, leaf 10)",14,num__PropertyAgeAtSale,feature_importance,0.009391443558742852
-"Decision Tree (depth 24, leaf 10)",15,num__AssociationFee_missing_ind,feature_importance,0.00826749297893595
-"Decision Tree (depth 24, leaf 10)",16,cat__SchoolDistrictSpatialCluster_Unified: Santa Monica-Malibu Unified,feature_importance,0.007910784162451568
-"Decision Tree (depth 24, leaf 10)",17,num__BedBathRatio,feature_importance,0.00777056577565784
-"Decision Tree (depth 24, leaf 10)",18,num__missingindicator_AssociationFee,feature_importance,0.007321200096421513
-"Decision Tree (depth 24, leaf 10)",19,num__LogLotSizeSquareFeet,feature_importance,0.007235915491979635
-"Decision Tree (depth 24, leaf 10)",20,num__LotSizeSquareFeet,feature_importance,0.0060677341594061905
-"Decision Tree (depth 24, leaf 10)",21,cat__SchoolDistrictSpatialCluster_Unified: Laguna Beach Unified,feature_importance,0.0037738956532581626
-"Decision Tree (depth 24, leaf 10)",22,cat__SchoolDistrictSpatialCluster_Unified: Beverly Hills Unified,feature_importance,0.003692799845610583
-"Decision Tree (depth 24, leaf 10)",23,cat__SchoolDistrictSpatialCluster_Unified: Los Angeles Unified,feature_importance,0.003386747194035933
-"Decision Tree (depth 24, leaf 10)",24,num__MainLevelBedrooms_missing_ind,feature_importance,0.003006433288003185
-"Decision Tree (depth 24, leaf 10)",25,cat__PostalCode_92629,feature_importance,0.0029405253142712083
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",1,num__LogLivingArea,feature_importance,0.22491985884403107
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",2,num__LivingArea,feature_importance,0.22000199255675335
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",3,num__BathroomsTotalInteger,feature_importance,0.12093331096049373
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",4,num__Latitude,feature_importance,0.08520810403065456
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",5,num__Longitude,feature_importance,0.06796259526501376
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",6,cat__SchoolDistrictSpatialCluster_Unified: Newport-Mesa Unified,feature_importance,0.021999340191342923
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",7,num__has_wood,feature_importance,0.017382604126121727
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",8,num__BedBathRatio,feature_importance,0.017274295225457818
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",9,cat__PoolPrivateYN_Unknown,feature_importance,0.016964295265970538
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",10,num__LogLotSizeSquareFeet,feature_importance,0.01609041535356457
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",11,num__YearBuilt,feature_importance,0.015056632586168944
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",12,num__PoolPrivateYN_missing_ind,feature_importance,0.014981106424083552
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",13,num__LotSizeSquareFeet,feature_importance,0.013970735133827407
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",14,num__PropertyAgeAtSale,feature_importance,0.013291929399363304
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",15,cat__HighSchoolDistrict_Newport Mesa Unified,feature_importance,0.010983187003931446
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",16,num__AssociationFee_missing_ind,feature_importance,0.009128961796334174
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",17,num__AssociationFee,feature_importance,0.008138964188655484
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",18,num__missingindicator_AssociationFee,feature_importance,0.008128617560432294
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",19,num__missingindicator_LogLivingArea,feature_importance,0.0053680809531167165
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",20,cat__SchoolDistrictSpatialCluster_Unified: Santa Monica-Malibu Unified,feature_importance,0.0049582755970458865
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",21,num__missingindicator_LivingArea,feature_importance,0.0045479653520972265
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",22,num__ParkingTotal,feature_importance,0.004413961699643396
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",23,cat__SchoolDistrictSpatialCluster_Unified: Beverly Hills Unified,feature_importance,0.004268177489896486
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",24,cat__PostalCode_90210,feature_importance,0.0042228787524431835
-"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",25,num__LivingArea_missing_ind,feature_importance,0.0036702098648333744
+Linear Regression (baseline),1,cat__DistrictName_Newport-Mesa Unified,coefficient,4696913.181790692
+Linear Regression (baseline),2,cat__PostalCode_93108,coefficient,4428534.234509088
+Linear Regression (baseline),3,cat__DistrictName_Beverly Hills Unified,coefficient,3961473.640882572
+Linear Regression (baseline),4,cat__PostalCode_92626,coefficient,-3736410.0047811805
+Linear Regression (baseline),5,cat__DistrictName_Laguna Beach Unified,coefficient,3700087.2050491264
+Linear Regression (baseline),6,cat__PostalCode_90024,coefficient,3566849.8753279555
+Linear Regression (baseline),7,cat__PostalCode_92627,coefficient,-3551222.8787411246
+Linear Regression (baseline),8,cat__PostalCode_90077,coefficient,3373398.7186569935
+Linear Regression (baseline),9,cat__PostalCode_90272,coefficient,3141320.1553628617
+Linear Regression (baseline),10,cat__PostalCode_90210,coefficient,2993162.282290663
+Linear Regression (baseline),11,cat__PostalCode_92014,coefficient,2942712.729963934
+Linear Regression (baseline),12,cat__PostalCode_90049,coefficient,2788816.597795177
+Linear Regression (baseline),13,cat__DistrictName_Manhattan Beach Unified,coefficient,2509917.2272666204
+Linear Regression (baseline),14,cat__PostalCode_94022,coefficient,2492501.656323512
+Linear Regression (baseline),15,cat__PostalCode_90402,coefficient,2418225.2738395897
+Linear Regression (baseline),16,cat__PostalCode_90265,coefficient,2376001.89468294
+Linear Regression (baseline),17,cat__PostalCode_94024,coefficient,2312283.179046308
+Linear Regression (baseline),18,cat__PostalCode_92037,coefficient,2173785.399462602
+Linear Regression (baseline),19,cat__PostalCode_93924,coefficient,-2170297.016946354
+Linear Regression (baseline),20,cat__PostalCode_92657,coefficient,2109079.9077097233
+Linear Regression (baseline),21,cat__PostalCode_90069,coefficient,1994619.2184134154
+Linear Regression (baseline),22,cat__PostalCode_92075,coefficient,1954929.8657320642
+Linear Regression (baseline),23,cat__PostalCode_90254,coefficient,1945644.1370326614
+Linear Regression (baseline),24,cat__HighSchoolDistrict_Carmel Unified,coefficient,1841167.0703480325
+Linear Regression (baseline),25,cat__DistrictName_Palo Alto Unified,coefficient,1798890.7660032709
+"Decision Tree (depth 24, leaf 10)",1,num__LivingArea,feature_importance,0.33345390095042093
+"Decision Tree (depth 24, leaf 10)",2,num__LogLivingArea,feature_importance,0.13857604968062326
+"Decision Tree (depth 24, leaf 10)",3,num__BathroomsTotalInteger,feature_importance,0.10640178034952631
+"Decision Tree (depth 24, leaf 10)",4,num__Latitude,feature_importance,0.08895956195133725
+"Decision Tree (depth 24, leaf 10)",5,num__Longitude,feature_importance,0.07507251860643938
+"Decision Tree (depth 24, leaf 10)",6,cat__DistrictName_Newport-Mesa Unified,feature_importance,0.03503293779811214
+"Decision Tree (depth 24, leaf 10)",7,num__YearBuilt,feature_importance,0.02358774197393722
+"Decision Tree (depth 24, leaf 10)",8,num__PoolPrivateYN_missing_ind,feature_importance,0.01751442073624804
+"Decision Tree (depth 24, leaf 10)",9,num__ParkingTotal,feature_importance,0.01607193116444459
+"Decision Tree (depth 24, leaf 10)",10,num__missingindicator_LogLivingArea,feature_importance,0.016066369484597682
+"Decision Tree (depth 24, leaf 10)",11,num__has_wood,feature_importance,0.014744119765024204
+"Decision Tree (depth 24, leaf 10)",12,num__PropertyAgeAtSale,feature_importance,0.012200092811168269
+"Decision Tree (depth 24, leaf 10)",13,cat__PoolPrivateYN_Unknown,feature_importance,0.012157352980694768
+"Decision Tree (depth 24, leaf 10)",14,num__missingindicator_AssociationFee,feature_importance,0.011642419603047443
+"Decision Tree (depth 24, leaf 10)",15,num__AssociationFee,feature_importance,0.01127763093473085
+"Decision Tree (depth 24, leaf 10)",16,cat__DistrictName_Santa Monica-Malibu Unified,feature_importance,0.007910975109622433
+"Decision Tree (depth 24, leaf 10)",17,num__BedBathRatio,feature_importance,0.0078051204427670925
+"Decision Tree (depth 24, leaf 10)",18,num__LotSizeSquareFeet,feature_importance,0.007263859647414784
+"Decision Tree (depth 24, leaf 10)",19,num__LogLotSizeSquareFeet,feature_importance,0.005943228149535898
+"Decision Tree (depth 24, leaf 10)",20,num__AssociationFee_missing_ind,feature_importance,0.00394125437520493
+"Decision Tree (depth 24, leaf 10)",21,cat__DistrictName_Laguna Beach Unified,feature_importance,0.003773986745959217
+"Decision Tree (depth 24, leaf 10)",22,num__MainLevelBedrooms_missing_ind,feature_importance,0.003707919746822219
+"Decision Tree (depth 24, leaf 10)",23,cat__DistrictName_Beverly Hills Unified,feature_importance,0.0036928889808553493
+"Decision Tree (depth 24, leaf 10)",24,cat__DistrictName_Los Angeles Unified,feature_importance,0.0033881794354665945
+"Decision Tree (depth 24, leaf 10)",25,cat__PostalCode_92629,feature_importance,0.002940596291430623
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",1,num__LivingArea,feature_importance,0.23707654551246318
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",2,num__LogLivingArea,feature_importance,0.19084408510360434
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",3,num__BathroomsTotalInteger,feature_importance,0.1343728294727696
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",4,num__Latitude,feature_importance,0.0848061516846044
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",5,num__Longitude,feature_importance,0.06801845508212266
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",6,num__BedBathRatio,feature_importance,0.025200070597293626
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",7,cat__DistrictName_Newport-Mesa Unified,feature_importance,0.021451619527283836
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",8,num__has_wood,feature_importance,0.0169812370734246
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",9,num__PoolPrivateYN_missing_ind,feature_importance,0.01674811629133094
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",10,num__LotSizeSquareFeet,feature_importance,0.01609667698332427
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",11,cat__PoolPrivateYN_Unknown,feature_importance,0.014595723398570098
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",12,num__LogLotSizeSquareFeet,feature_importance,0.01377630837611737
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",13,num__YearBuilt,feature_importance,0.013576323067569939
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",14,num__PropertyAgeAtSale,feature_importance,0.013233043102324682
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",15,cat__HighSchoolDistrict_Newport Mesa Unified,feature_importance,0.011457857981940845
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",16,num__AssociationFee,feature_importance,0.008812145415278801
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",17,num__missingindicator_AssociationFee,feature_importance,0.00869858785784769
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",18,num__AssociationFee_missing_ind,feature_importance,0.007140093933931141
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",19,num__LivingArea_missing_ind,feature_importance,0.005392365069251001
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",20,cat__DistrictName_Santa Monica-Malibu Unified,feature_importance,0.005324440700068626
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",21,num__ParkingTotal,feature_importance,0.005189638344331974
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",22,cat__DistrictName_Beverly Hills Unified,feature_importance,0.004355718210650146
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",23,cat__PostalCode_90210,feature_importance,0.004031811883787108
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",24,num__missingindicator_LivingArea,feature_importance,0.0034964771875499595
+"Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)",25,num__missingindicator_LogLivingArea,feature_importance,0.003271313731518203

@@ -10,7 +10,7 @@ Standardized evaluation controls
 Train months: 2025-05 to 2026-04
 Test month: 2026-05
 Rows evaluated: 129,813 train, 12,024 test
-Fold-fitted encoded feature count: 1,314
+Fold-fitted encoded feature count: 1,193
 Excluded leakage fields: ListPrice, OriginalListPrice, DaysOnMarket, PurchaseContractDate.
 CloseDate and SaleMonth were used only for split/reporting and target-independent feature engineering.
 No test rows were removed for the headline evaluation.
@@ -22,8 +22,8 @@ Feature engineering rationale
 - SaleMonthSin/SaleMonthCos: capture cyclical seasonality while keeping December adjacent to January.
 - LogLivingArea: adds a diminishing-return representation of highly skewed living area while retaining the original field.
 - LogLotSizeSquareFeet: adds a diminishing-return representation of highly skewed lot size while retaining the original field.
-- SchoolDistrictSpatialCluster: uses a target-independent CDE point-in-polygon boundary cluster; unified districts are used where present, otherwise elementary and high-school districts are combined.
-- SchoolDistrictBoundaryMatched: preserves the small amount of spatial-join missingness instead of silently treating unmatched coordinates as an ordinary district.
+- DistrictName: comes from a target-independent point-in-polygon join after filtering the CDE 2025-26 layer to DistrictType = Unified.
+- SchoolDistrictBoundaryMatched: distinguishes matched Unified polygons from properties outside Unified-only coverage or with unusable coordinates.
 
 Reproducibility controls
 ------------------------
@@ -37,10 +37,11 @@ Pinned package versions are recorded in requirements.txt.
 
 Spatial join quality
 --------------------
-The original school-district link in Data Science v.4.pdf is broken; this work uses the latest available dataset page: https://lab.data.ca.gov/dataset/california-school-district-areas-2024-25.
-Properties matched to at least one CDE boundary: 141,772 of 141,837.
-Properties retained as No boundary match: 65.
-Composite school-district clusters: 647.
+Boundary source: https://data.ca.gov/dataset/california-school-district-areas-2025-26.
+CDE polygons loaded: 936; Unified polygons used: 345.
+Properties matched to a Unified district: 107,571 of 141,837.
+Properties retained as No boundary match: 34,266.
+Unique matched Unified DistrictName values: 322.
 
 Cross-validation fold plan
 --------------------------
@@ -54,31 +55,31 @@ Cross-validation fold plan
 Five-fold tuning results
 ------------------------
            family                                                         model  cv_folds  mean_validation_r2  std_validation_r2  mean_validation_mae  mean_validation_rmse  mean_validation_mape  mean_validation_mdape  total_fit_seconds
-    Decision Tree                             Decision Tree (depth 24, leaf 10)         5              0.6238             0.0519         284,134.1292          884,650.9530                0.1957                 0.1176            27.5901
-    Decision Tree                             Decision Tree (depth 18, leaf 10)         5              0.6239             0.0520         286,607.9423          884,529.4137                0.1988                 0.1208            23.9166
-Linear Regression                                  Linear Regression (baseline)         5              0.6421             0.1027         355,752.3184          859,640.1833                0.3202                 0.2164            44.8494
-    Random Forest Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)         5              0.7054             0.0644         242,379.6977          781,641.1135                0.1730                 0.1028           232.6355
-    Random Forest Random Forest (40 trees, depth 24, leaf 10, max_features 0.4)         5              0.6933             0.0647         258,658.9344          797,690.9397                0.1917                 0.1145            86.2171
+    Decision Tree                             Decision Tree (depth 24, leaf 10)         5              0.6235             0.0514         284,079.0101          884,967.3916                0.1957                 0.1176            29.1164
+    Decision Tree                             Decision Tree (depth 18, leaf 10)         5              0.6239             0.0508         285,994.3018          884,531.3249                0.1984                 0.1203            24.9925
+Linear Regression                                  Linear Regression (baseline)         5              0.6360             0.1011         361,911.9259          867,117.7260                0.3275                 0.2199            47.4837
+    Random Forest Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)         5              0.7058             0.0672         242,433.9624          781,040.9097                0.1733                 0.1032           774.2254
+    Random Forest Random Forest (40 trees, depth 24, leaf 10, max_features 0.4)         5              0.6927             0.0640         259,680.2670          798,256.0703                0.1926                 0.1153           105.4282
 
 Final model comparison
 ----------------------
                                                         model  train_r2  test_r2     test_mae      test_rmse  test_mape  test_mdape  fit_seconds
-                                 Linear Regression (baseline)    0.6731   0.4978 316,854.4549 1,189,197.5156     0.2953      0.1742      29.0325
-                            Decision Tree (depth 24, leaf 10)    0.7746   0.4724 277,347.0039 1,218,874.7227     0.1939      0.1072      20.1681
-Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)    0.7869   0.5197 233,446.6993 1,162,954.0517     0.1795      0.0899     159.6465
+                                 Linear Regression (baseline)    0.6676   0.4945 322,806.3089 1,193,077.0011     0.3034      0.1774      20.6871
+                            Decision Tree (depth 24, leaf 10)    0.7745   0.4729 276,724.0230 1,218,313.1155     0.1965      0.1072      15.7248
+Random Forest (60 trees, depth 30, leaf 10, max_features 0.7)    0.7862   0.5216 234,157.4583 1,160,644.1715     0.1794      0.0897     134.1175
 
 Week 5 to Week 6 test change
 ----------------------------
            family  week5_test_r2  week5_test_mape  week5_test_mdape  week6_test_r2  week6_test_mape  week6_test_mdape  test_r2_change  test_mape_change  test_mdape_change
-Linear Regression         0.4714           0.3777            0.2241         0.4978           0.2953            0.1742          0.0264           -0.0824            -0.0499
-    Decision Tree         0.4398           0.1978            0.1064         0.4724           0.1939            0.1072          0.0326           -0.0039             0.0008
-    Random Forest         0.5139           0.1824            0.0897         0.5197           0.1795            0.0899          0.0058           -0.0029             0.0002
+Linear Regression         0.4714           0.3777            0.2241         0.4945           0.3034            0.1774          0.0231           -0.0743            -0.0466
+    Decision Tree         0.4398           0.1978            0.1064         0.4729           0.1965            0.1072          0.0330           -0.0013             0.0008
+    Random Forest         0.5139           0.1824            0.0897         0.5216           0.1794            0.0897          0.0078           -0.0030             0.0000
 
 Interpretation
 --------------
-Best test R2: Random Forest (60 trees, depth 30, leaf 10, max_features 0.7) at 0.520.
+Best test R2: Random Forest (60 trees, depth 30, leaf 10, max_features 0.7) at 0.522.
 Best typical percentage error: Random Forest (60 trees, depth 30, leaf 10, max_features 0.7) at 9.0% MdAPE.
 The feature-engineered experiment adds intrinsic relationships, a cyclical valuation-time signal, and an authoritative school-district spatial category without using sale-process fields.
 Linear Regression benefits most when the engineered ratios/log transforms make nonlinear physical relationships easier to express.
-Decision Tree and Random Forest can use the new district cluster and interactions directly, while five-fold chronological tuning reduces dependence on a single favorable validation month.
+Decision Tree and Random Forest can use the joined Unified DistrictName and its interactions directly, while five-fold chronological tuning reduces dependence on a single favorable validation month.
 The school-district feature is a demand/location proxy, not a claim that district boundaries alone cause value; localized error checks should continue in later weeks.

@@ -4,4 +4,4 @@ Intrinsic + temporal,YearBuilt + CloseDate,PropertyAgeAtSale + missing indicator
 Temporal,CloseDate month,SaleMonthSin + SaleMonthCos,12-month sine/cosine cycle,Added predictors; raw dates remain trace-only
 Intrinsic,LivingArea,LogLivingArea,log1p transform,Added predictor; original retained
 Intrinsic,LotSizeSquareFeet,LogLotSizeSquareFeet,log1p transform,Added predictor; original retained
-Locational,Latitude + Longitude + listing-entered HighSchoolDistrict,SchoolDistrictSpatialCluster + boundary-match flag,CDE 2024-25 point-in-polygon boundary cluster,Added predictors; district component columns retained for audit
+Locational,Latitude + Longitude + listing-entered HighSchoolDistrict,DistrictName + boundary-match flag,CDE 2025-26 Unified-only point-in-polygon spatial join,Added predictors and used throughout downstream modeling
