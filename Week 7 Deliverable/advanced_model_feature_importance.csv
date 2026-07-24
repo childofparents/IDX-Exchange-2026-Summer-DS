@@ -1,0 +1,76 @@
+model,rank,feature,importance
+"XGBoost (depth 8, lr 0.05, 500 trees)",1,num__missingindicator_BedBathRatio,0.04870762676000595
+"XGBoost (depth 8, lr 0.05, 500 trees)",2,num__missingindicator_BathroomsTotalInteger,0.028115151450037956
+"XGBoost (depth 8, lr 0.05, 500 trees)",3,cat__DistrictName_Newport-Mesa Unified,0.02769032120704651
+"XGBoost (depth 8, lr 0.05, 500 trees)",4,cat__HighSchoolDistrict_Newport Mesa Unified,0.02351025491952896
+"XGBoost (depth 8, lr 0.05, 500 trees)",5,cat__PoolPrivateYN_Unknown,0.02239108271896839
+"XGBoost (depth 8, lr 0.05, 500 trees)",6,num__LogLivingArea,0.01957319676876068
+"XGBoost (depth 8, lr 0.05, 500 trees)",7,num__BathroomsTotalInteger_missing_ind,0.01949501968920231
+"XGBoost (depth 8, lr 0.05, 500 trees)",8,num__AssociationFee_missing_ind,0.018984954804182053
+"XGBoost (depth 8, lr 0.05, 500 trees)",9,num__missingindicator_GarageSpaces,0.016251450404524803
+"XGBoost (depth 8, lr 0.05, 500 trees)",10,num__LivingArea_missing_ind,0.014302610419690609
+"XGBoost (depth 8, lr 0.05, 500 trees)",11,cat__DistrictName_Beverly Hills Unified,0.014272967353463173
+"XGBoost (depth 8, lr 0.05, 500 trees)",12,cat__DistrictName_Santa Monica-Malibu Unified,0.013446394354104996
+"XGBoost (depth 8, lr 0.05, 500 trees)",13,cat__HighSchoolDistrict_Laguna Beach Unified,0.01295556128025055
+"XGBoost (depth 8, lr 0.05, 500 trees)",14,num__GarageSpaces_missing_ind,0.011754263192415237
+"XGBoost (depth 8, lr 0.05, 500 trees)",15,num__LivingArea,0.011746044270694256
+"XGBoost (depth 8, lr 0.05, 500 trees)",16,cat__PostalCode_92657,0.01110218744724989
+"XGBoost (depth 8, lr 0.05, 500 trees)",17,cat__HighSchoolDistrict_William S. Hart Union,0.011088719591498375
+"XGBoost (depth 8, lr 0.05, 500 trees)",18,num__BathroomsTotalInteger,0.010928426869213581
+"XGBoost (depth 8, lr 0.05, 500 trees)",19,cat__HighSchoolDistrict_Manhattan Unified,0.008799410425126553
+"XGBoost (depth 8, lr 0.05, 500 trees)",20,cat__PostalCode_91436,0.008645479567348957
+"XGBoost (depth 8, lr 0.05, 500 trees)",21,cat__PostalCode_92629,0.008329043164849281
+"XGBoost (depth 8, lr 0.05, 500 trees)",22,num__PoolPrivateYN_missing_ind,0.008014792576432228
+"XGBoost (depth 8, lr 0.05, 500 trees)",23,cat__PostalCode_93108,0.007988322526216507
+"XGBoost (depth 8, lr 0.05, 500 trees)",24,cat__HighSchoolDistrict_Duarte Unified,0.007970938459038734
+"XGBoost (depth 8, lr 0.05, 500 trees)",25,cat__PostalCode_90210,0.007710376754403114
+"LightGBM (depth 10, lr 0.05, 500 trees)",1,num__Latitude,1769.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",2,num__Longitude,1591.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",3,num__LivingArea,1270.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",4,num__LotSizeSquareFeet,1111.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",5,num__BathroomsTotalInteger,738.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",6,num__YearBuilt,691.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",7,num__LogLivingArea,605.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",8,num__PropertyAgeAtSale,535.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",9,num__BedBathRatio,533.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",10,num__BedroomsTotal,506.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",11,num__AssociationFee,472.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",12,num__LogLotSizeSquareFeet,441.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",13,num__BathroomsTotalInteger_missing_ind,293.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",14,num__SaleMonthSin,258.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",15,num__ParkingTotal,254.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",16,cat__PostalCode_90024,223.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",17,num__SaleMonthCos,179.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",18,num__has_wood,162.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",19,num__GarageSpaces,141.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",20,num__AssociationFee_missing_ind,126.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",21,num__PoolPrivateYN_missing_ind,109.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",22,cat__DistrictName_Beverly Hills Unified,105.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",23,num__MainLevelBedrooms_missing_ind,94.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",24,cat__PostalCode_90265,93.0
+"LightGBM (depth 10, lr 0.05, 500 trees)",25,cat__PostalCode_93108,92.0
+Week 6 Random Forest reference,1,num__LivingArea,0.247723554748137
+Week 6 Random Forest reference,2,num__LogLivingArea,0.21891178944898765
+Week 6 Random Forest reference,3,num__BathroomsTotalInteger,0.09314868635716096
+Week 6 Random Forest reference,4,num__Latitude,0.08422748114000692
+Week 6 Random Forest reference,5,num__Longitude,0.06715471651252582
+Week 6 Random Forest reference,6,num__BedBathRatio,0.02488271948496114
+Week 6 Random Forest reference,7,cat__DistrictName_Newport-Mesa Unified,0.022059985742095636
+Week 6 Random Forest reference,8,num__has_wood,0.017049825673389144
+Week 6 Random Forest reference,9,cat__PoolPrivateYN_Unknown,0.016858827938781074
+Week 6 Random Forest reference,10,num__PoolPrivateYN_missing_ind,0.016764481652017448
+Week 6 Random Forest reference,11,num__YearBuilt,0.014391399337672946
+Week 6 Random Forest reference,12,num__LogLotSizeSquareFeet,0.013588117948361563
+Week 6 Random Forest reference,13,num__LotSizeSquareFeet,0.012761792703041152
+Week 6 Random Forest reference,14,num__PropertyAgeAtSale,0.012184774235452733
+Week 6 Random Forest reference,15,num__AssociationFee_missing_ind,0.011112829289926084
+Week 6 Random Forest reference,16,cat__HighSchoolDistrict_Newport Mesa Unified,0.01068880084891493
+Week 6 Random Forest reference,17,num__AssociationFee,0.00991675092680478
+Week 6 Random Forest reference,18,num__missingindicator_AssociationFee,0.008336545302958305
+Week 6 Random Forest reference,19,num__ParkingTotal,0.00709198971411652
+Week 6 Random Forest reference,20,cat__DistrictName_Beverly Hills Unified,0.0058787791436842604
+Week 6 Random Forest reference,21,cat__PostalCode_90210,0.005376319691377736
+Week 6 Random Forest reference,22,cat__DistrictName_Santa Monica-Malibu Unified,0.004927481384590414
+Week 6 Random Forest reference,23,num__GarageSpaces,0.003746971392731789
+Week 6 Random Forest reference,24,num__missingindicator_GarageSpaces,0.0030812697234599905
+Week 6 Random Forest reference,25,cat__DistrictName_Laguna Beach Unified,0.0027416207675329198

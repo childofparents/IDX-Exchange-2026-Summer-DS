@@ -1,0 +1,4 @@
+fold,train_months,validation_month,train_rows,validation_rows,shuffle
+1,2025-06 to 2026-02,2026-03,94867,11166,False
+2,2025-06 to 2026-03,2026-04,106033,12020,False
+3,2025-06 to 2026-04,2026-05,118053,12007,False
