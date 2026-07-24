@@ -1,6 +1,10 @@
-# IDX-Exchange-2026-Summer-DS
-IDX Exchange Data Science Project Work (Team: ds55)
+# California Property Close Price Prediction Project
+*IDX Exchange Summer 2026 Data Science Program*
 
-- Dataset Time Window: 2025-05 to 2026-05 
-  - Train set: 2025-05 to 2026-04 (12 months)
-  - Test set: 2026-05
+A production-grade **automated valuation model** that generalizes to on-market and off-market properties, holds up over time, and reproduces reliably.
+
+**Team: ds55**
+
+## Dataset Time Window: June 2025 to June 2026
+  - Training: June 2025 to May 2026 (12 months)
+  - Test: June 2026 (most recent month available)
