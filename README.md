@@ -46,7 +46,7 @@ Primary references are the [project brief](Data%20Science%20v.4.pdf), [real-esta
 
 ## Preprocessing and feature engineering
 
-The final [Week 7 script](W7%20Advanced%20Models/05_advanced_models.py) recreates the Week 3 cleaning and Week 6 feature engineering from the raw monthly data. That makes the final reported result reproducible without relying on a notebook's in-memory state.
+The final [Week 7 script](https://github.com/childofparents/IDX-Exchange-2026-Summer-DS/blob/5157849f17d92ce338ec8127ee38941703a14821/Week%207%20Deliverable/05_advanced_models.ipynb) recreates the Week 3 cleaning and Week 6 feature engineering from the raw monthly data. That makes the final reported result reproducible without relying on a notebook's in-memory state.
 
 1. **Scope and schema checks.** The script requires 13 contiguous monthly files, validates required columns, parses dates/numerics, and applies the eligible-record filter above.
 2. **Invalid values become missing, not dropped rows.** Implausible coordinates, non-positive living area/lot size/bedroom/bathroom counts, negative parking/garage/association fees, inconsistent main-level bedrooms, and extreme count values are converted to missing values. This preserves an otherwise valid sale for later imputation.
@@ -75,7 +75,7 @@ The project began with Linear Regression, then tested Decision Tree and Random F
 
 Lower is better for MAE, RMSE, MAPE, and MdAPE; higher is better for R-squared. R-squared measures explained variation, MAE/RMSE measure dollar error (with RMSE emphasizing large misses), and MAPE/MdAPE measure relative error. MdAPE is the preferred typical-error headline because it is scale-invariant and robust to the right-skewed price-error tail; it should be reported alongside RMSE and MAE rather than replacing them.
 
-Price-band findings reinforce the tradeoff: XGBoost performs best around $800k-$1.1M (9.88% MdAPE) and is weakest below $575k (15.06% MdAPE). Random Forest is strongest at $575k-$800k (6.24% MdAPE) and weakest at $1.67M+ (14.10% MdAPE). See [Week 8 findings](W8%20Evaluation%20Expansion/Week8_Evaluation_Findings.docx) and [metrics summary](W8%20Evaluation%20Expansion/metrics_summary.csv) for the full evaluation.
+Price-band findings reinforce the tradeoff: XGBoost performs best around $800k-$1.1M (9.88% MdAPE) and is weakest below $575k (15.06% MdAPE). Random Forest is strongest at $575k-$800k (6.24% MdAPE) and weakest at $1.67M+ (14.10% MdAPE). See [Week 8 findings](https://github.com/childofparents/IDX-Exchange-2026-Summer-DS/blob/5157849f17d92ce338ec8127ee38941703a14821/Week%208%20Deliverable/Week8_Evaluation_Findings.docx) and [metrics summary](https://github.com/childofparents/IDX-Exchange-2026-Summer-DS/blob/5157849f17d92ce338ec8127ee38941703a14821/Week%208%20Deliverable/metrics_summary.csv) for the full evaluation.
 
 ## Re-run instructions
 
@@ -106,31 +106,29 @@ The Week 4-6 scripts reproduce their own historical May 2026 experiments, using 
 
 ```bash
 source .venv/bin/activate
-python -m pip install -r "W7 Advanced Models/requirements.txt"
-python "W3 Data Preprocessing/02_preprocessing.py"
-python "W4 Baseline Model/03_baseline_model.py"
-python "W5 Additional Models/04_model_comparison.py"
-python "W6 Feature Engineering/05_feature_engineering.py"
+python -m pip install -r "Week 7 Deliverable/requirements.txt"
+python "Week 3 Deliverable/02_preprocessing.py"
+python "Week 4 Deliverable/v2/03_baseline_model.py"
+python "Week 5 Deliverable/04_model_comparison.py"
+python "Week 6 Deliverable/05_feature_engineering.py"
+...
 ```
 
-Important handoff note: `02_preprocessing.py` creates `W3 Data Preprocessing/Cleaned SFR CRMLSSold CSVs/`, whereas the historical Week 4-6 scripts read the versioned `W3 Data Preprocessing/Kelvin/` tables. Do not claim that the first command regenerates those `Kelvin` artifacts; retain them to reproduce the historical outputs. Week 7 reads the raw files directly and is the authoritative rerun path for the final result.
+Week 8 has a runnable notebook file, saved evaluation tables, and a written findings document, but no evaluation Python script is included. Run the noteboook directly to recreate the evaluation results.
 
-Week 8 has saved evaluation tables and a written findings document, but no executable evaluation script is currently included. Regenerating its exact tables from a fresh Week 7 run requires implementing that missing evaluation step; this is a known reproducibility gap, not an implied automated command.
-
-## Outputs and repository map
+## File locations and repository map
 
 | Location | Purpose |
 | --- | --- |
-| `raw data/` | Immutable local CRMLS sold-listing source extracts |
-| `W3 Data Preprocessing/02_preprocessing.py` | Source validation, filtering, and cleaned-data generation |
-| `W4 Baseline Model/03_baseline_model.py` | Linear Regression baseline and May 2026 historical results |
-| `W5 Additional Models/04_model_comparison.py` | Decision Tree and Random Forest comparison |
-| `W6 Feature Engineering/05_feature_engineering.py` | Engineered features and school-district spatial join |
-| `W7 Advanced Models/05_advanced_models.py` | Final reproducible XGBoost/LightGBM workflow and June 2026 evaluation |
-| `W7 Advanced Models/advanced_model_test_metrics.csv` | Final Week 7 three-model holdout metrics |
-| `W8 Evaluation Expansion/metrics_summary.csv` | Same-month five-model summary used in the results table |
+| `Week 3 Deliverable/02_preprocessing.ipynb` | Source validation, filtering, and cleaned-data generation |
+| `Week 4 Deliverable/v2/03_baseline_model.ipynb` | Linear Regression baseline and May 2026 historical results |
+| `Week 5 Deliverable/04_model_comparison.ipynb` | Decision Tree and Random Forest comparison |
+| `Week 6 Deliverable/05_feature_engineering.ipynb` | Engineered features and school-district spatial join |
+| `Week 7 Deliverable/05_advanced_models.ipynb` | Final reproducible XGBoost/LightGBM workflow and June 2026 evaluation |
+| `Week 7 Deliverable/advanced_model_test_metrics.csv` | Final Week 7 three-model holdout metrics |
+| `Week 8 Deliverable/metrics_summary.csv` | Same-month five-model summary used in the results table |
 
-## Known limitations and next steps
+## Limitations and next steps
 
 - The evidence is one out-of-time month, not a multi-month rolling backtest. Re-evaluate monthly and monitor error by county/ZIP and price band before production selection.
 - Entry-level and luxury properties have weaker relative-error behavior; statewide metrics can hide local-market underperformance.
@@ -138,11 +136,10 @@ Week 8 has saved evaluation tables and a written findings document, but no execu
 - The data is limited to California residential single-family sales and can drift as inventory, interest rates, and reporting practices change.
 - `AssociationFee` is not normalized by `AssociationFeeFrequency` in the final run, so fee amounts on different schedules are not directly comparable.
 - Week 9 was skipped; a production app still needs a saved preprocessing pipeline, model artifact, input-schema assertion, monitoring, and a prediction-interval/uncertainty design.
-- Add a versioned Week 8 evaluation script and a data manifest/checksum so the complete reporting chain can be rebuilt from scratch.
 
 ## Key-column metadata notes
 
-The tables below follow the Trestle `Field | Type | Size | Description` convention, with an added project-use column. They intentionally include **only** columns named in [Week 1 key-column notes](Week1_Key_Column_Notes.txt), not the full CRMLS extract or the full Trestle Property resource. Sizes and native types come from the Trestle metadata; project treatment records how each field should be used in this AVM.
+The tables below follow the Trestle `Field | Type | Size | Description` convention, with an added project-use column. They intentionally include **only** columns named in [Week 1 key-column notes](https://github.com/childofparents/IDX-Exchange-2026-Summer-DS/blob/5157849f17d92ce338ec8127ee38941703a14821/Week%201%20Deliverable/Week1_Key_Column_Notes.txt), not the full CRMLS extract or the full Trestle Property resource. Sizes and native types come from the Trestle metadata; project treatment records how each field should be used in this AVM.
 
 ### DateTime
 
@@ -254,4 +251,4 @@ The tables below follow the Trestle `Field | Type | Size | Description` conventi
 
 ## Documentation provenance
 
-This README records the source snapshot, row counts, feature logic, leakage exclusions, selected hyperparameters, validation design, metrics, limitations, and next steps so a teammate can reproduce or extend the work without relying on undocumented assumptions. It follows the documentation and reproducibility expectations on pages 7-8 of [AVM Data Science Best Practices](AVM_Data_Science_Best_Practices%20v.1.pdf).
+This README records the source snapshot, row counts, feature logic, leakage exclusions, selected hyperparameters, validation design, metrics, limitations, and next steps so a future IDX Exchange intern or staff can reproduce or extend the work without relying on undocumented assumptions. It follows the documentation and reproducibility expectations on pages 7-8 of [AVM Data Science Best Practices](AVM_Data_Science_Best_Practices%20v.1.pdf).
