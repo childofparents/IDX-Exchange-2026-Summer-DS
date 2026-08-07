@@ -42,7 +42,7 @@ The source is licensed historical sold-listing data from **CRMLS (California Reg
 
 The script verifies that each row's `CloseDate` month agrees with its source-file month. The recorded final run found zero month mismatches.
 
-Primary references are the [project brief](Data%20Science%20v.4.pdf), [real-estate primer](Real_Estate_Primer.pdf), [Trestle Property metadata](resources/Trestle%20Property%20MetaData.pdf), and [Week 1 key-column notes](Week1_Key_Column_Notes.txt).
+Primary references are the [project brief](Data%20Science%20v.4.pdf), [real-estate primer](Real_Estate_Primer.pdf), [Trestle Property metadata](https://github.com/childofparents/IDX-Exchange-2026-Summer-DS/blob/3b78d3ce4995fb87593675fbeae89622961c997a/Trestle%20Property%20MetaData.pdf), and [Week 1 key-column notes](Week1_Key_Column_Notes.txt).
 
 ## Preprocessing and feature engineering
 
