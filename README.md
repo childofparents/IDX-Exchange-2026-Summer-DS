@@ -11,7 +11,8 @@ This project designs and evaluates **automated valuation model** (AVM) candidate
 
 ## Project status and headline result
 
-**Week 9 was intentionally skipped.** There is no Streamlit app, `app.py`, or serialized production model in this repository, so there are no app-launch instructions. The final runnable modeling workflow is Week 7; Week 8 contains the saved evaluation results and findings.
+**Our team decided to skip Week 9 - Building a Streamlit prediction app** 
+The final runnable modeling workflow is Week 7; Week 8 contains the evaluation results and findings.
 
 No model wins every metric. **XGBoost** is the recommended statewide candidate because it has the highest holdout R-squared and the lowest RMSE (large-dollar-error control). **Random Forest** has the lowest MAPE and MdAPE, so it remains the best benchmark for the typical sale's relative error.
 
